@@ -35,10 +35,10 @@ def save_to_csv(df: pd.DataFrame, symbol: str) -> None:
     Save stock data to CSV.
     """
 
-    os.makedirs("data/raw", exist_ok=True)
+    os.makedirs("data/raw/stocks", exist_ok=True)
 
     filename = symbol.replace(".NS", "")
-    filepath = f"data/raw/{filename}.csv"
+    filepath = f"data/raw/stocks/{filename}.csv"
 
     df.to_csv(filepath)
 
