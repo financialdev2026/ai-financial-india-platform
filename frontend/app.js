@@ -137,10 +137,10 @@ function mergeLiveDashboard(live) {
         sector.negativeArticles = Number(score.negative_articles || 0);
         sector.reason = score.reason;
       } else {
-        sector.newsScore = 0;
-        sector.strengthScore = Number.isFinite(Number(sector.strengthScore)) ? Number(sector.strengthScore) : 0;
-        sector.signal = sector.signal || signalFromScore(sector.strengthScore);
-        sector.reason = sector.reason || "Sector strength is based on recent sector index momentum; no fresh sector-specific news score was available.";
+        sector.newsScore = NaN;
+        sector.strengthScore = Number.isFinite(Number(sector.strengthScore)) ? Number(sector.strengthScore) : NaN;
+        sector.signal = sector.signal || "UNKNOWN";
+        sector.reason = sector.reason || "No recent sector-specific news articles available.";
       }
     });
   }
@@ -1218,7 +1218,7 @@ function metricValue(sector, metric) {
 }
 
 function metricLabel(value, metric) {
-  if (!Number.isFinite(value)) return "No current score";
+  if (!Number.isFinite(value)) return "Awaiting news data";
   if (metric === "change") return `${signed(value)}%`;
   if (metric === "volume") return formatNumber.format(value);
   return Number(value).toFixed(3);
@@ -1229,7 +1229,8 @@ function signed(value) {
 }
 
 function signalFromScore(score) {
-  const value = Number(score || 0);
+  if (!Number.isFinite(Number(score))) return "UNKNOWN";
+  const value = Number(score);
   if (value >= 0.65) return "STRONGLY BULLISH";
   if (value >= 0.2) return "BULLISH";
   if (value > -0.2) return "CAUTIOUS";

@@ -9,20 +9,24 @@ SECTOR_KEYWORDS = {
         "TECH MAHINDRA",
         "SOFTWARE",
         "IT SERVICES",
-        "DIGITAL"
+        "DIGITAL",
+        "INFO EDGE",
+        "TECHNOLOGY"
     ],
 
-    "BANKING": [
-    "HDFC",
-    "ICICI",
-    "SBI",
-    "BANK",
-    "BANKING",
-    "NBFC",
-    "LOAN",
-    "CREDIT",
-    "LENDING",
-    "RBI"
+    "BANK": [
+        "HDFC",
+        "ICICI",
+        "SBI",
+        "BANK",
+        "BANKING",
+        "NBFC",
+        "LOAN",
+        "CREDIT",
+        "LENDING",
+        "RBI",
+        "FINANCIAL SERVICES",
+        "MUTUAL FUND"
     ],
 
     "AUTO": [
@@ -33,7 +37,9 @@ SECTOR_KEYWORDS = {
         "VOLTAS",
         "AUTOMOBILE",
         "EV",
-        "VEHICLE"
+        "VEHICLE",
+        "CAR",
+        "EXPORTS"
     ],
 
     "PHARMA": [
@@ -44,7 +50,8 @@ SECTOR_KEYWORDS = {
         "PHARMA",
         "DRUG",
         "MEDICINE",
-        "HEALTHCARE"
+        "HEALTHCARE",
+        "BIOTECH"
     ],
 
     "FMCG": [
@@ -53,6 +60,8 @@ SECTOR_KEYWORDS = {
         "HINDUSTAN UNILEVER",
         "NESTLE",
         "FMCG",
-        "CONSUMER GOODS"
+        "CONSUMER GOODS",
+        "CONSUMER",
+        "RETAIL"
     ]
 }

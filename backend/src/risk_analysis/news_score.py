@@ -17,6 +17,8 @@ engine = create_engine("sqlite:///data/financial_market.db")
 NEWS_WINDOW_DAYS = 7
 NEWS_HALF_LIFE_DAYS = 3
 
+EXPECTED_SECTORS = ["IT", "BANK", "AUTO", "PHARMA", "FMCG"]
+
 
 def load_data():
     query = """
@@ -80,7 +82,7 @@ def aggregate_sector_scores(df):
             neutral_articles=("sentiment", lambda x: (x == "neutral").sum()),
             negative_articles=("sentiment", lambda x: (x == "negative").sum()),
             average_confidence=("confidence", "mean"),
-            recency_weight=(" _recency_weight".strip(), "sum"),
+            recency_weight=("_recency_weight", "sum"),
             latest_article_at=("_published_at", "max"),
             article_window_start=("_published_at", "min"),
             article_count=("sentiment", "count"),
@@ -104,15 +106,14 @@ def aggregate_sector_scores(df):
 
 def calculate_news_score(row):
     weight = row["weighted_sentiment"]
-    if pd.isna(weight):
+    articles = max(float(row.get("article_count", 0) or 0), 0.0)
+
+    if pd.isna(weight) or articles == 0:
         return np.nan
 
-    articles = max(float(row.get("article_count", 0) or 0), 0.0)
     recency = min(float(row.get("recency_weight", 0) or 0) / max(articles, 1.0), 1.0)
     evidence = min(np.log1p(articles) / np.log1p(12), 1.0)
 
-    # Preserve the continuous sentiment value instead of collapsing sectors to
-    # hard -1/0/1 buckets. Smaller article samples are intentionally softened.
     sample_adjustment = 0.70 + (0.30 * evidence)
     recency_adjustment = 0.85 + (0.15 * recency)
     score = float(weight) * sample_adjustment * recency_adjustment
@@ -151,6 +152,10 @@ def generate_reason(row):
         latest = pd.Timestamp(row["latest_article_at"]).strftime("%Y-%m-%d")
         age = f" Latest article: {latest}."
 
+    articles = int(row.get("article_count", 0) or 0)
+    if articles == 0:
+        return f"No recent sector-specific news found.{age}"
+
     if row["news_score"] >= 0.5:
         return (
             f"Recent sector news is predominantly positive "
@@ -177,15 +182,39 @@ def process(df):
         - pd.to_datetime(grouped["latest_article_at"])
     ).dt.total_seconds().div(86400).round(2)
 
+    for sector in EXPECTED_SECTORS:
+        if sector not in grouped["sector"].values:
+            missing = pd.DataFrame([{
+                "sector": sector,
+                "positive_articles": 0,
+                "neutral_articles": 0,
+                "negative_articles": 0,
+                "average_confidence": 0.0,
+                "weighted_sentiment": 0.0,
+                "news_score": np.nan,
+                "signal": "UNKNOWN",
+                "confidence": 0.0,
+                "reason": "No recent sector-specific news articles available.",
+                "sector_rank": len(grouped) + 1,
+                "article_count": 0,
+                "latest_article_at": "",
+                "article_window_start": "",
+                "freshness_days": np.nan,
+            }])
+            grouped = pd.concat([grouped, missing], ignore_index=True)
+
     return grouped
 
 
 def rank_sectors(df):
-    output = df.sort_values(
-        by=["news_score", "confidence", "article_count"],
+    output = df.copy()
+    output["_sort_score"] = output["news_score"].fillna(-999)
+    output = output.sort_values(
+        by=["_sort_score", "confidence", "article_count"],
         ascending=[False, False, False],
     ).copy()
     output["sector_rank"] = range(1, len(output) + 1)
+    output = output.drop(columns=["_sort_score"])
     return output
 
 
