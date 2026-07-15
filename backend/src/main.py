@@ -10,7 +10,7 @@ from src.api.dashboard import router as dashboard_router
 from src.scheduler import start_scheduler, stop_scheduler, get_scheduler_status
 
 
-FRONTEND_DIR = Path(__file__).resolve().parents[1] / "frontend"
+FRONTEND_DIR = Path(__file__).resolve().parents[2] / "frontend"
 RENDER_URL = os.getenv("RENDER_EXTERNAL_URL", "")
 
 
