@@ -279,6 +279,41 @@ risk_scores = Table(
     Column("reason", String)
 )
 
+market_reports = Table(
+    "market_reports",
+    metadata,
+
+    Column("id", Integer, primary_key=True, autoincrement=True),
+
+    Column("date", String),
+
+    Column("recommendation", String),
+
+    Column("overall_score", Float),
+
+    Column("confidence", Float),
+
+    Column("market_risk", String),
+
+    Column("agreement_score", Float)
+)
+
+volume_scores = Table(
+    "volume_scores",
+    metadata,
+
+    Column("id", Integer, primary_key=True, autoincrement=True),
+
+    Column("ticker", String, nullable=False),
+    Column("date", String, nullable=False),
+
+    Column("volume_score", Float),
+    Column("volume_ratio", Float),
+    Column("volume_signal", String),
+    Column("confidence", Float),
+    Column("reason", String)
+)
+
 metadata.create_all(engine)
 
 print("All database tables created successfully")

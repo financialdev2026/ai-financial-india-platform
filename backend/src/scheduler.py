@@ -17,6 +17,7 @@ Refresh Schedule (all times IST):
 """
 
 import logging
+import os
 import subprocess
 import sys
 import time
@@ -56,12 +57,16 @@ def is_news_window():
 def run_script(script_path):
     """Run a pipeline script as a subprocess. Returns (success, output)."""
     try:
+        env = dict(os.environ)
+        env["PYTHONPATH"] = str(PROJECT_ROOT)
+        env["PYTHONUTF8"] = "1"
         result = subprocess.run(
             [sys.executable, script_path],
             capture_output=True,
             text=True,
             timeout=300,
             cwd=str(PROJECT_ROOT),
+            env=env,
         )
         if result.returncode != 0:
             logger.error("Script failed: %s\n%s", script_path, result.stderr[-500:] if result.stderr else "")
