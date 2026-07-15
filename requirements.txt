@@ -9,5 +9,6 @@ sqlalchemy
 apscheduler
 ta
 feedparser
+--extra-index-url https://download.pytorch.org/whl/cpu
 transformers
 torch

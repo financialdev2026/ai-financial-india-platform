@@ -354,7 +354,7 @@ def job_news_cycle():
 
 
 def job_initial_startup():
-    """Run a full pipeline on server startup ONLY if data is stale (>4 hours old)."""
+    """Run a lightweight pipeline on server startup. Skips NLP to avoid OOM."""
     logger.info("[SCHEDULER] Checking if startup refresh is needed...")
     t0 = time.time()
 
@@ -381,14 +381,13 @@ def job_initial_startup():
             if age_hours < 4:
                 logger.info("[SCHEDULER] Data is %.1f hours old, skipping startup refresh.", age_hours)
                 return
-            logger.info("[SCHEDULER] Data is %.1 hours old, running startup refresh.", age_hours)
+            logger.info("[SCHEDULER] Data is %.1f hours old, running startup refresh.", age_hours)
         else:
             logger.info("[SCHEDULER] No freshness record found, running startup refresh.")
 
         job_fetch_stocks()
         job_compute_indicators()
         job_fetch_news()
-        job_run_nlp()
         job_fetch_fii_dii()
         job_fetch_economic()
 

@@ -1,17 +1,21 @@
-from transformers import pipeline
+_classifier = None
 
-print("Loading FinBERT...")
 
-classifier = pipeline(
-    "text-classification",
-    model="ProsusAI/finbert"
-)
-
-print("FinBERT Loaded Successfully")
+def _get_classifier():
+    global _classifier
+    if _classifier is None:
+        from transformers import pipeline
+        print("Loading FinBERT...")
+        _classifier = pipeline(
+            "text-classification",
+            model="ProsusAI/finbert"
+        )
+        print("FinBERT Loaded Successfully")
+    return _classifier
 
 
 def analyze_sentiment(text: str):
-
+    classifier = _get_classifier()
     result = classifier(text)[0]
 
     return {

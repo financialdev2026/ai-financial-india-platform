@@ -11,12 +11,24 @@ from src.scheduler import start_scheduler, stop_scheduler, get_scheduler_status
 
 
 FRONTEND_DIR = Path(__file__).resolve().parents[2] / "frontend"
+BACKEND_DIR = Path(__file__).resolve().parents[1]
+DATA_DIR = BACKEND_DIR / "data"
 RENDER_URL = os.getenv("RENDER_EXTERNAL_URL", "")
 
 
 @asynccontextmanager
 async def lifespan(app):
-    start_scheduler()
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        from src.database.db_setup import metadata, engine
+        metadata.create_all(engine)
+        print("[STARTUP] Database tables initialized.")
+    except Exception as exc:
+        print(f"[WARN] Database init failed: {exc}")
+    try:
+        start_scheduler()
+    except Exception as exc:
+        print(f"[WARN] Scheduler failed to start: {exc}")
     yield
     stop_scheduler()
 
@@ -62,8 +74,10 @@ def root():
 
 @app.get("/health")
 def health():
+    db_exists = (DATA_DIR / "financial_market.db").exists()
     return {
-        "status": "healthy"
+        "status": "healthy",
+        "database": "ready" if db_exists else "not initialized",
     }
 
 
