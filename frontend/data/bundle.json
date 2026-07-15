@@ -1,0 +1,4698 @@
+{
+  "generatedAt": "2026-07-09T02:24:23",
+  "sourceRoot": "E:\\ai-financial-india-platform",
+  "report": {
+    "executive_summary": {
+      "date": "2026-07-08",
+      "recommendation": "BUY",
+      "overall_score": 0.3142,
+      "confidence": 45.71,
+      "agreement": 60.0,
+      "market_risk": "HIGH",
+      "reason": "Technical indicators bullish, Supportive macroeconomic conditions"
+    },
+    "score_breakdown": {
+      "Technical": {
+        "score": 0.6,
+        "weight": 40,
+        "contribution": 0.24
+      },
+      "News": {
+        "score": 0.16666666666666666,
+        "weight": 25,
+        "contribution": 0.042
+      },
+      "Volume": {
+        "score": 0.0,
+        "weight": 15,
+        "contribution": 0.0
+      },
+      "Economic": {
+        "score": 0.325,
+        "weight": 10,
+        "contribution": 0.033
+      },
+      "Institutional": {
+        "score": 0.0,
+        "weight": 10,
+        "contribution": 0.0
+      }
+    },
+    "technical_analysis": {
+      "average_score": 0.013,
+      "buy_signals": 37775,
+      "sell_signals": 35171,
+      "average_confidence": 69.73,
+      "best_stock": "TCS",
+      "best_score": 0.94,
+      "worst_stock": "INFY",
+      "worst_score": -0.8500000000000001
+    },
+    "news_analysis": {
+      "average_score": 0.167,
+      "positive_articles": 220,
+      "neutral_articles": 92,
+      "negative_articles": 192,
+      "average_confidence": 67.15,
+      "best_sector": "PHARMA",
+      "best_score": 1.0,
+      "worst_sector": "AUTO",
+      "worst_score": 0.0
+    },
+    "volume_analysis": {
+      "average_score": -0.004,
+      "average_ratio": 1.02,
+      "average_confidence": 77.08,
+      "highest_volume_stock": "ITC",
+      "highest_volume_ratio": 12.849494006468495
+    },
+    "economic_analysis": {
+      "repo_rate": 5.5,
+      "gdp_growth": 6.8,
+      "inflation": 3.2,
+      "economic_score": 0.325,
+      "signal": "BUY",
+      "confidence": 80.0
+    },
+    "institutional_analysis": {
+      "net_flow": 11694.77,
+      "average_score": 0.05,
+      "buyers": 9,
+      "sellers": 1,
+      "average_confidence": 67.0
+    },
+    "ai_reasoning": "The PrismEdge AI Risk Engine recommends a BUY signal with an overall market score of 0.314 and a confidence level of 45.71%.\n\nThis recommendation is produced by combining five independent analytical engines: Technical Analysis, Financial News Sentiment, Trading Volume Behaviour, Macroeconomic Indicators and Institutional Money Flow.\n\nModule-wise interpretation:\n\n• Technical Analysis contributes strongly to the recommendation with a score of 0.60, indicating bullish market momentum supported by price indicators.\n• Financial News Sentiment remains largely neutral (0.17) and has limited influence on today's recommendation.\n• Trading Volume Analysis remains neutral (0.00).\n• Macroeconomic indicators remain supportive (0.33), with favourable economic conditions improving overall outlook.\n• Institutional activity is currently neutral (0.00).\n\nThe weighted combination of these five analytical modules produces a final market score of 0.314.\n\nThe agreement score of 60.0% indicates moderate consensus among the analytical modules. The recommendation is reliable, although some indicators remain neutral.\n\nConsidering the combined weighted evidence, the AI concludes with a BUY recommendation while classifying the current market risk as HIGH."
+  },
+  "dashboard": {
+    "recommendation": "BUY",
+    "overall_score": 0.3142,
+    "confidence": 45.71,
+    "risk": "HIGH",
+    "agreement": 60.0,
+    "metrics": {
+      "technical": 0.6,
+      "news": 0.16666666666666666,
+      "volume": 0.0,
+      "economic": 0.325,
+      "institutional": 0.0
+    },
+    "chart": [
+      {
+        "day": "Mon",
+        "score": 0.28
+      },
+      {
+        "day": "Tue",
+        "score": 0.41
+      },
+      {
+        "day": "Wed",
+        "score": 0.35
+      },
+      {
+        "day": "Thu",
+        "score": 0.55
+      },
+      {
+        "day": "Fri",
+        "score": 0.63
+      },
+      {
+        "day": "Sat",
+        "score": 0.69
+      },
+      {
+        "day": "Today",
+        "score": 0.3142
+      }
+    ],
+    "reasons": [
+      "Technical indicators bullish",
+      "Supportive macroeconomic conditions"
+    ],
+    "ai_explanation": "The PrismEdge AI Risk Engine recommends a BUY signal with an overall market score of 0.314 and a confidence level of 45.71%.\n\nThis recommendation is produced by combining five independent analytical engines: Technical Analysis, Financial News Sentiment, Trading Volume Behaviour, Macroeconomic Indicators and Institutional Money Flow.\n\nModule-wise interpretation:\n\n• Technical Analysis contributes strongly to the recommendation with a score of 0.60, indicating bullish market momentum supported by price indicators.\n• Financial News Sentiment remains largely neutral (0.17) and has limited influence on today's recommendation.\n• Trading Volume Analysis remains neutral (0.00).\n• Macroeconomic indicators remain supportive (0.33), with favourable economic conditions improving overall outlook.\n• Institutional activity is currently neutral (0.00).\n\nThe weighted combination of these five analytical modules produces a final market score of 0.314.\n\nThe agreement score of 60.0% indicates moderate consensus among the analytical modules. The recommendation is reliable, although some indicators remain neutral.\n\nConsidering the combined weighted evidence, the AI concludes with a BUY recommendation while classifying the current market risk as HIGH.",
+    "sectors": [
+      {
+        "name": "Information Technology",
+        "score": 0.91
+      },
+      {
+        "name": "Banking",
+        "score": 0.82
+      },
+      {
+        "name": "Automobile",
+        "score": 0.71
+      },
+      {
+        "name": "FMCG",
+        "score": 0.64
+      },
+      {
+        "name": "Pharmaceuticals",
+        "score": 0.49
+      }
+    ],
+    "news": [
+      {
+        "title": "Reliance Industries gains after positive outlook",
+        "sentiment": "Positive",
+        "confidence": 96
+      },
+      {
+        "title": "RBI keeps repo rate unchanged",
+        "sentiment": "Neutral",
+        "confidence": 91
+      },
+      {
+        "title": "IT stocks continue strong momentum",
+        "sentiment": "Positive",
+        "confidence": 93
+      },
+      {
+        "title": "Oil prices rise on global concerns",
+        "sentiment": "Negative",
+        "confidence": 82
+      },
+      {
+        "title": "Institutional buying supports banking sector",
+        "sentiment": "Positive",
+        "confidence": 89
+      }
+    ]
+  },
+  "stocks": [
+    {
+      "ticker": "BHARTIARTL",
+      "date": "2026-07-08",
+      "close": 1888.1,
+      "open": 1911.0,
+      "high": 1924.2,
+      "low": 1875.1,
+      "volume": 6188593,
+      "changePct": 0.0,
+      "technicalScore": 0.4,
+      "technicalSignal": "BUY",
+      "technicalConfidence": 60.0,
+      "technicalReason": "MACD Bullish, Price Above Bollinger Mid Band",
+      "volumeRatio": 1.28,
+      "volumeSignal": "HIGH",
+      "rsi": 54.1,
+      "macd": 15.767,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 1850.7,
+          "volume": 8521503
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1850.7,
+          "volume": 8521503
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1850.7,
+          "volume": 8521503
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1850.7,
+          "volume": 8521503
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1850.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1850.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1850.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1850.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1850.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1841.1,
+          "volume": 10940130
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1841.1,
+          "volume": 10940130
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1841.1,
+          "volume": 10940130
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1841.1,
+          "volume": 10940130
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1841.1,
+          "volume": 10940130
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1852.0,
+          "volume": 7233634
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1852.0,
+          "volume": 7233634
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1852.0,
+          "volume": 7233634
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1852.0,
+          "volume": 7233634
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1852.0,
+          "volume": 7233634
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1871.0,
+          "volume": 4307333
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1871.0,
+          "volume": 4307333
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1871.0,
+          "volume": 4307333
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1871.0,
+          "volume": 4307333
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1871.0,
+          "volume": 4307333
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1875.0,
+          "volume": 5282404
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1875.0,
+          "volume": 5282404
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1875.0,
+          "volume": 5282404
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1875.0,
+          "volume": 5282404
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1875.0,
+          "volume": 5282404
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1910.4,
+          "volume": 5087043
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1910.4,
+          "volume": 5087043
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1910.4,
+          "volume": 5087043
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1910.4,
+          "volume": 5087043
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1910.4,
+          "volume": 5086693
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1925.7,
+          "volume": 2740217
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1925.7,
+          "volume": 2740217
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1925.7,
+          "volume": 2740217
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1925.7,
+          "volume": 2740217
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1925.8,
+          "volume": 5767438
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1925.8,
+          "volume": 5767438
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1925.8,
+          "volume": 5767438
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1925.8,
+          "volume": 5767286
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1888.1,
+          "volume": 6188593
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1888.1,
+          "volume": 6188593
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1888.1,
+          "volume": 6188593
+        }
+      ]
+    },
+    {
+      "ticker": "HDFCBANK",
+      "date": "2026-07-08",
+      "close": 810.3,
+      "open": 825.9,
+      "high": 834.35,
+      "low": 806.95,
+      "volume": 38749130,
+      "changePct": 0.0,
+      "technicalScore": 0.4,
+      "technicalSignal": "BUY",
+      "technicalConfidence": 60.0,
+      "technicalReason": "MACD Bullish, Price Above Bollinger Mid Band",
+      "volumeRatio": 0.91,
+      "volumeSignal": "NORMAL",
+      "rsi": 59.13,
+      "macd": 12.679,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 796.3,
+          "volume": 46707966
+        },
+        {
+          "date": "2026-06-25",
+          "close": 796.3,
+          "volume": 46707966
+        },
+        {
+          "date": "2026-06-25",
+          "close": 796.3,
+          "volume": 46707966
+        },
+        {
+          "date": "2026-06-25",
+          "close": 796.3,
+          "volume": 46707966
+        },
+        {
+          "date": "2026-06-26",
+          "close": 796.3,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 796.3,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 796.3,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 796.3,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 796.3,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 798.9,
+          "volume": 46695977
+        },
+        {
+          "date": "2026-06-29",
+          "close": 798.9,
+          "volume": 46695977
+        },
+        {
+          "date": "2026-06-29",
+          "close": 798.9,
+          "volume": 46695977
+        },
+        {
+          "date": "2026-06-29",
+          "close": 798.9,
+          "volume": 46695977
+        },
+        {
+          "date": "2026-06-29",
+          "close": 798.9,
+          "volume": 46695977
+        },
+        {
+          "date": "2026-06-30",
+          "close": 797.95,
+          "volume": 45778356
+        },
+        {
+          "date": "2026-06-30",
+          "close": 797.95,
+          "volume": 45778356
+        },
+        {
+          "date": "2026-06-30",
+          "close": 797.95,
+          "volume": 45778356
+        },
+        {
+          "date": "2026-06-30",
+          "close": 797.95,
+          "volume": 45778356
+        },
+        {
+          "date": "2026-06-30",
+          "close": 797.95,
+          "volume": 45778356
+        },
+        {
+          "date": "2026-07-01",
+          "close": 796.15,
+          "volume": 26094378
+        },
+        {
+          "date": "2026-07-01",
+          "close": 796.15,
+          "volume": 26094378
+        },
+        {
+          "date": "2026-07-01",
+          "close": 796.15,
+          "volume": 26094378
+        },
+        {
+          "date": "2026-07-01",
+          "close": 796.15,
+          "volume": 26094378
+        },
+        {
+          "date": "2026-07-01",
+          "close": 796.15,
+          "volume": 26094378
+        },
+        {
+          "date": "2026-07-02",
+          "close": 795.9,
+          "volume": 34143823
+        },
+        {
+          "date": "2026-07-02",
+          "close": 795.9,
+          "volume": 34143823
+        },
+        {
+          "date": "2026-07-02",
+          "close": 795.9,
+          "volume": 34143823
+        },
+        {
+          "date": "2026-07-02",
+          "close": 795.9,
+          "volume": 34143823
+        },
+        {
+          "date": "2026-07-02",
+          "close": 795.9,
+          "volume": 34143823
+        },
+        {
+          "date": "2026-07-03",
+          "close": 801.05,
+          "volume": 25871958
+        },
+        {
+          "date": "2026-07-03",
+          "close": 801.05,
+          "volume": 25871958
+        },
+        {
+          "date": "2026-07-03",
+          "close": 801.05,
+          "volume": 25871958
+        },
+        {
+          "date": "2026-07-03",
+          "close": 801.05,
+          "volume": 25871958
+        },
+        {
+          "date": "2026-07-03",
+          "close": 801.05,
+          "volume": 25867219
+        },
+        {
+          "date": "2026-07-06",
+          "close": 829.85,
+          "volume": 63203327
+        },
+        {
+          "date": "2026-07-06",
+          "close": 829.85,
+          "volume": 63203327
+        },
+        {
+          "date": "2026-07-06",
+          "close": 829.85,
+          "volume": 63203327
+        },
+        {
+          "date": "2026-07-06",
+          "close": 829.85,
+          "volume": 63203327
+        },
+        {
+          "date": "2026-07-07",
+          "close": 829.3,
+          "volume": 57611729
+        },
+        {
+          "date": "2026-07-07",
+          "close": 829.3,
+          "volume": 57611729
+        },
+        {
+          "date": "2026-07-07",
+          "close": 829.3,
+          "volume": 57611729
+        },
+        {
+          "date": "2026-07-07",
+          "close": 829.3,
+          "volume": 57607105
+        },
+        {
+          "date": "2026-07-08",
+          "close": 810.3,
+          "volume": 38749130
+        },
+        {
+          "date": "2026-07-08",
+          "close": 810.3,
+          "volume": 38749130
+        },
+        {
+          "date": "2026-07-08",
+          "close": 810.3,
+          "volume": 38749130
+        }
+      ]
+    },
+    {
+      "ticker": "HINDUNILVR",
+      "date": "2026-07-08",
+      "close": 2135.8,
+      "open": 2199.0,
+      "high": 2199.0,
+      "low": 2130.0,
+      "volume": 1326289,
+      "changePct": 0.0,
+      "technicalScore": 0.6,
+      "technicalSignal": "STRONG BUY",
+      "technicalConfidence": 80.0,
+      "technicalReason": "MACD Bullish, Price Below Bollinger Mid Band",
+      "volumeRatio": 0.61,
+      "volumeSignal": "LOW",
+      "rsi": 43.36,
+      "macd": -0.206,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 2174.2,
+          "volume": 1898262
+        },
+        {
+          "date": "2026-06-25",
+          "close": 2174.2,
+          "volume": 1898262
+        },
+        {
+          "date": "2026-06-25",
+          "close": 2174.2,
+          "volume": 1898262
+        },
+        {
+          "date": "2026-06-25",
+          "close": 2174.2,
+          "volume": 1898262
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2174.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2174.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2174.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2174.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2174.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2151.3,
+          "volume": 1423514
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2151.3,
+          "volume": 1423514
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2151.3,
+          "volume": 1423514
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2151.3,
+          "volume": 1423514
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2151.3,
+          "volume": 1423514
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2118.2,
+          "volume": 2364422
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2118.2,
+          "volume": 2364422
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2118.2,
+          "volume": 2364422
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2118.2,
+          "volume": 2364422
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2118.2,
+          "volume": 2364422
+        },
+        {
+          "date": "2026-07-01",
+          "close": 2182.0,
+          "volume": 2497576
+        },
+        {
+          "date": "2026-07-01",
+          "close": 2182.0,
+          "volume": 2497576
+        },
+        {
+          "date": "2026-07-01",
+          "close": 2182.0,
+          "volume": 2497576
+        },
+        {
+          "date": "2026-07-01",
+          "close": 2182.0,
+          "volume": 2497576
+        },
+        {
+          "date": "2026-07-01",
+          "close": 2182.0,
+          "volume": 2497576
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2210.6,
+          "volume": 2585362
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2210.6,
+          "volume": 2585362
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2210.6,
+          "volume": 2585362
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2210.6,
+          "volume": 2585362
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2210.6,
+          "volume": 2585362
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2201.2,
+          "volume": 1536616
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2201.2,
+          "volume": 1536616
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2201.2,
+          "volume": 1536616
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2201.2,
+          "volume": 1536616
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2201.2,
+          "volume": 1536410
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2202.0,
+          "volume": 2131061
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2202.0,
+          "volume": 2131061
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2202.0,
+          "volume": 2131061
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2202.0,
+          "volume": 2131061
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2208.8,
+          "volume": 2552492
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2208.8,
+          "volume": 2552492
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2208.8,
+          "volume": 2552492
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2208.8,
+          "volume": 2552445
+        },
+        {
+          "date": "2026-07-08",
+          "close": 2135.8,
+          "volume": 1326289
+        },
+        {
+          "date": "2026-07-08",
+          "close": 2135.8,
+          "volume": 1326289
+        },
+        {
+          "date": "2026-07-08",
+          "close": 2135.8,
+          "volume": 1326289
+        }
+      ]
+    },
+    {
+      "ticker": "ICICIBANK",
+      "date": "2026-07-08",
+      "close": 1380.6,
+      "open": 1410.3,
+      "high": 1418.3,
+      "low": 1375.9,
+      "volume": 10572216,
+      "changePct": 0.0,
+      "technicalScore": 0.4,
+      "technicalSignal": "BUY",
+      "technicalConfidence": 60.0,
+      "technicalReason": "MACD Bullish, Price Above Bollinger Mid Band",
+      "volumeRatio": 0.76,
+      "volumeSignal": "LOW",
+      "rsi": 57.56,
+      "macd": 30.418,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 1387.5,
+          "volume": 17173209
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1387.5,
+          "volume": 17173209
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1387.5,
+          "volume": 17173209
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1387.5,
+          "volume": 17173209
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1387.5,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1387.5,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1387.5,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1387.5,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1387.5,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1387.6,
+          "volume": 13249405
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1387.6,
+          "volume": 13249405
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1387.6,
+          "volume": 13249405
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1387.6,
+          "volume": 13249405
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1387.6,
+          "volume": 13249405
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1375.2,
+          "volume": 18398057
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1375.2,
+          "volume": 18398057
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1375.2,
+          "volume": 18398057
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1375.2,
+          "volume": 18398057
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1375.2,
+          "volume": 18398057
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1379.8,
+          "volume": 11948034
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1379.8,
+          "volume": 11948034
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1379.8,
+          "volume": 11948034
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1379.8,
+          "volume": 11948034
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1379.8,
+          "volume": 11948034
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1400.0,
+          "volume": 15779429
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1400.0,
+          "volume": 15779429
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1400.0,
+          "volume": 15779429
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1400.0,
+          "volume": 15779429
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1400.0,
+          "volume": 15779429
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1411.4,
+          "volume": 12901785
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1411.4,
+          "volume": 12901785
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1411.4,
+          "volume": 12901785
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1411.4,
+          "volume": 12901785
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1411.4,
+          "volume": 12899919
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1426.9,
+          "volume": 12306949
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1426.9,
+          "volume": 12306949
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1426.9,
+          "volume": 12306949
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1426.9,
+          "volume": 12306949
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1414.7,
+          "volume": 15664178
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1414.7,
+          "volume": 15664178
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1414.7,
+          "volume": 15664178
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1414.7,
+          "volume": 15664066
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1380.6,
+          "volume": 10572216
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1380.6,
+          "volume": 10572216
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1380.6,
+          "volume": 10572216
+        }
+      ]
+    },
+    {
+      "ticker": "INFY",
+      "date": "2026-07-08",
+      "close": 1069.3,
+      "open": 1071.9,
+      "high": 1079.7,
+      "low": 1064.4,
+      "volume": 13020079,
+      "changePct": 0.0,
+      "technicalScore": 0.4,
+      "technicalSignal": "BUY",
+      "technicalConfidence": 60.0,
+      "technicalReason": "MACD Bullish, Price Above Bollinger Mid Band",
+      "volumeRatio": 0.94,
+      "volumeSignal": "NORMAL",
+      "rsi": 46.59,
+      "macd": -29.666,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 1041.2,
+          "volume": 15866779
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1041.2,
+          "volume": 15866779
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1041.2,
+          "volume": 15866779
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1041.2,
+          "volume": 15866779
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1041.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1041.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1041.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1041.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1041.2,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.7,
+          "volume": 15080892
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.7,
+          "volume": 15080892
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.7,
+          "volume": 15080892
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.7,
+          "volume": 15080892
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.7,
+          "volume": 15080892
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1000.4,
+          "volume": 24128263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1000.4,
+          "volume": 24128263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1000.4,
+          "volume": 24128263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1000.4,
+          "volume": 24128263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1000.4,
+          "volume": 24128263
+        },
+        {
+          "date": "2026-07-01",
+          "close": 985.3,
+          "volume": 13037982
+        },
+        {
+          "date": "2026-07-01",
+          "close": 985.3,
+          "volume": 13037982
+        },
+        {
+          "date": "2026-07-01",
+          "close": 985.3,
+          "volume": 13037982
+        },
+        {
+          "date": "2026-07-01",
+          "close": 985.3,
+          "volume": 13037982
+        },
+        {
+          "date": "2026-07-01",
+          "close": 985.3,
+          "volume": 13037982
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1040.9,
+          "volume": 18741111
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1040.9,
+          "volume": 18741111
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1040.9,
+          "volume": 18741111
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1040.9,
+          "volume": 18741111
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1040.9,
+          "volume": 18741111
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1047.2,
+          "volume": 11653534
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1047.2,
+          "volume": 11653534
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1047.2,
+          "volume": 11653534
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1047.2,
+          "volume": 11653534
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1047.2,
+          "volume": 11651448
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1042.2,
+          "volume": 5559747
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1042.2,
+          "volume": 5559747
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1042.2,
+          "volume": 5559747
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1042.2,
+          "volume": 5559747
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1071.8,
+          "volume": 18866296
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1071.8,
+          "volume": 18866296
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1071.8,
+          "volume": 18866296
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1071.8,
+          "volume": 18864306
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1069.3,
+          "volume": 13020079
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1069.3,
+          "volume": 13020079
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1069.3,
+          "volume": 13020079
+        }
+      ]
+    },
+    {
+      "ticker": "ITC",
+      "date": "2026-07-08",
+      "close": 280.65,
+      "open": 286.9,
+      "high": 287.85,
+      "low": 280.0,
+      "volume": 21590787,
+      "changePct": 0.0,
+      "technicalScore": 0.1,
+      "technicalSignal": "HOLD",
+      "technicalConfidence": 80.0,
+      "technicalReason": "MACD Bearish, Price Below Lower Bollinger Band",
+      "volumeRatio": 1.41,
+      "volumeSignal": "HIGH",
+      "rsi": 34.05,
+      "macd": -1.577,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 290.0,
+          "volume": 11230239
+        },
+        {
+          "date": "2026-06-25",
+          "close": 290.0,
+          "volume": 11230239
+        },
+        {
+          "date": "2026-06-25",
+          "close": 290.0,
+          "volume": 11230239
+        },
+        {
+          "date": "2026-06-25",
+          "close": 290.0,
+          "volume": 11230239
+        },
+        {
+          "date": "2026-06-26",
+          "close": 290.0,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 290.0,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 290.0,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 290.0,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 290.0,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 290.7,
+          "volume": 10110022
+        },
+        {
+          "date": "2026-06-29",
+          "close": 290.7,
+          "volume": 10110022
+        },
+        {
+          "date": "2026-06-29",
+          "close": 290.7,
+          "volume": 10110022
+        },
+        {
+          "date": "2026-06-29",
+          "close": 290.7,
+          "volume": 10110022
+        },
+        {
+          "date": "2026-06-29",
+          "close": 290.7,
+          "volume": 10110022
+        },
+        {
+          "date": "2026-06-30",
+          "close": 286.95,
+          "volume": 18180676
+        },
+        {
+          "date": "2026-06-30",
+          "close": 286.95,
+          "volume": 18180676
+        },
+        {
+          "date": "2026-06-30",
+          "close": 286.95,
+          "volume": 18180676
+        },
+        {
+          "date": "2026-06-30",
+          "close": 286.95,
+          "volume": 18180676
+        },
+        {
+          "date": "2026-06-30",
+          "close": 286.95,
+          "volume": 18180676
+        },
+        {
+          "date": "2026-07-01",
+          "close": 290.3,
+          "volume": 6551425
+        },
+        {
+          "date": "2026-07-01",
+          "close": 290.3,
+          "volume": 6551425
+        },
+        {
+          "date": "2026-07-01",
+          "close": 290.3,
+          "volume": 6551425
+        },
+        {
+          "date": "2026-07-01",
+          "close": 290.3,
+          "volume": 6551425
+        },
+        {
+          "date": "2026-07-01",
+          "close": 290.3,
+          "volume": 6551425
+        },
+        {
+          "date": "2026-07-02",
+          "close": 289.9,
+          "volume": 12722639
+        },
+        {
+          "date": "2026-07-02",
+          "close": 289.9,
+          "volume": 12722639
+        },
+        {
+          "date": "2026-07-02",
+          "close": 289.9,
+          "volume": 12722639
+        },
+        {
+          "date": "2026-07-02",
+          "close": 289.9,
+          "volume": 12722639
+        },
+        {
+          "date": "2026-07-02",
+          "close": 289.9,
+          "volume": 12722639
+        },
+        {
+          "date": "2026-07-03",
+          "close": 289.95,
+          "volume": 6517591
+        },
+        {
+          "date": "2026-07-03",
+          "close": 289.95,
+          "volume": 6517591
+        },
+        {
+          "date": "2026-07-03",
+          "close": 289.95,
+          "volume": 6517591
+        },
+        {
+          "date": "2026-07-03",
+          "close": 289.95,
+          "volume": 6517591
+        },
+        {
+          "date": "2026-07-03",
+          "close": 289.95,
+          "volume": 6514846
+        },
+        {
+          "date": "2026-07-06",
+          "close": 288.25,
+          "volume": 27126124
+        },
+        {
+          "date": "2026-07-06",
+          "close": 288.25,
+          "volume": 27126124
+        },
+        {
+          "date": "2026-07-06",
+          "close": 288.25,
+          "volume": 27126124
+        },
+        {
+          "date": "2026-07-06",
+          "close": 288.25,
+          "volume": 27126124
+        },
+        {
+          "date": "2026-07-07",
+          "close": 288.75,
+          "volume": 18491160
+        },
+        {
+          "date": "2026-07-07",
+          "close": 288.75,
+          "volume": 18491160
+        },
+        {
+          "date": "2026-07-07",
+          "close": 288.75,
+          "volume": 18491160
+        },
+        {
+          "date": "2026-07-07",
+          "close": 288.75,
+          "volume": 18489823
+        },
+        {
+          "date": "2026-07-08",
+          "close": 280.65,
+          "volume": 21590787
+        },
+        {
+          "date": "2026-07-08",
+          "close": 280.65,
+          "volume": 21590787
+        },
+        {
+          "date": "2026-07-08",
+          "close": 280.65,
+          "volume": 21590787
+        }
+      ]
+    },
+    {
+      "ticker": "LT",
+      "date": "2026-07-08",
+      "close": 3892.1,
+      "open": 3950.0,
+      "high": 3988.0,
+      "low": 3871.0,
+      "volume": 2252155,
+      "changePct": 0.0,
+      "technicalScore": -0.15,
+      "technicalSignal": "HOLD",
+      "technicalConfidence": 80.0,
+      "technicalReason": "MACD Bearish, Price Below Lower Bollinger Band",
+      "volumeRatio": 1.17,
+      "volumeSignal": "NORMAL",
+      "rsi": 33.25,
+      "macd": -8.072,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 4216.4,
+          "volume": 3104020
+        },
+        {
+          "date": "2026-06-25",
+          "close": 4216.4,
+          "volume": 3104020
+        },
+        {
+          "date": "2026-06-25",
+          "close": 4216.4,
+          "volume": 3104020
+        },
+        {
+          "date": "2026-06-25",
+          "close": 4216.4,
+          "volume": 3104020
+        },
+        {
+          "date": "2026-06-26",
+          "close": 4216.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 4216.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 4216.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 4216.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 4216.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 4165.2,
+          "volume": 2706906
+        },
+        {
+          "date": "2026-06-29",
+          "close": 4165.2,
+          "volume": 2706906
+        },
+        {
+          "date": "2026-06-29",
+          "close": 4165.2,
+          "volume": 2706906
+        },
+        {
+          "date": "2026-06-29",
+          "close": 4165.2,
+          "volume": 2706906
+        },
+        {
+          "date": "2026-06-29",
+          "close": 4165.2,
+          "volume": 2706906
+        },
+        {
+          "date": "2026-06-30",
+          "close": 4143.4,
+          "volume": 1539094
+        },
+        {
+          "date": "2026-06-30",
+          "close": 4143.4,
+          "volume": 1539094
+        },
+        {
+          "date": "2026-06-30",
+          "close": 4143.4,
+          "volume": 1539094
+        },
+        {
+          "date": "2026-06-30",
+          "close": 4143.4,
+          "volume": 1539094
+        },
+        {
+          "date": "2026-06-30",
+          "close": 4143.4,
+          "volume": 1539094
+        },
+        {
+          "date": "2026-07-01",
+          "close": 4092.6,
+          "volume": 1437109
+        },
+        {
+          "date": "2026-07-01",
+          "close": 4092.6,
+          "volume": 1437109
+        },
+        {
+          "date": "2026-07-01",
+          "close": 4092.6,
+          "volume": 1437109
+        },
+        {
+          "date": "2026-07-01",
+          "close": 4092.6,
+          "volume": 1437109
+        },
+        {
+          "date": "2026-07-01",
+          "close": 4092.6,
+          "volume": 1437109
+        },
+        {
+          "date": "2026-07-02",
+          "close": 4059.4,
+          "volume": 2481554
+        },
+        {
+          "date": "2026-07-02",
+          "close": 4059.4,
+          "volume": 2481554
+        },
+        {
+          "date": "2026-07-02",
+          "close": 4059.4,
+          "volume": 2481554
+        },
+        {
+          "date": "2026-07-02",
+          "close": 4059.4,
+          "volume": 2481554
+        },
+        {
+          "date": "2026-07-02",
+          "close": 4059.4,
+          "volume": 2481554
+        },
+        {
+          "date": "2026-07-03",
+          "close": 4026.6,
+          "volume": 1505428
+        },
+        {
+          "date": "2026-07-03",
+          "close": 4026.6,
+          "volume": 1505428
+        },
+        {
+          "date": "2026-07-03",
+          "close": 4026.6,
+          "volume": 1505428
+        },
+        {
+          "date": "2026-07-03",
+          "close": 4026.6,
+          "volume": 1505428
+        },
+        {
+          "date": "2026-07-03",
+          "close": 4026.6,
+          "volume": 1504724
+        },
+        {
+          "date": "2026-07-06",
+          "close": 4041.0,
+          "volume": 1252054
+        },
+        {
+          "date": "2026-07-06",
+          "close": 4041.0,
+          "volume": 1252054
+        },
+        {
+          "date": "2026-07-06",
+          "close": 4041.0,
+          "volume": 1252054
+        },
+        {
+          "date": "2026-07-06",
+          "close": 4041.0,
+          "volume": 1252054
+        },
+        {
+          "date": "2026-07-07",
+          "close": 3991.9,
+          "volume": 2442514
+        },
+        {
+          "date": "2026-07-07",
+          "close": 3991.9,
+          "volume": 2442514
+        },
+        {
+          "date": "2026-07-07",
+          "close": 3991.9,
+          "volume": 2442514
+        },
+        {
+          "date": "2026-07-07",
+          "close": 3991.9,
+          "volume": 2442274
+        },
+        {
+          "date": "2026-07-08",
+          "close": 3892.1,
+          "volume": 2252155
+        },
+        {
+          "date": "2026-07-08",
+          "close": 3892.1,
+          "volume": 2252155
+        },
+        {
+          "date": "2026-07-08",
+          "close": 3892.1,
+          "volume": 2252155
+        }
+      ]
+    },
+    {
+      "ticker": "RELIANCE",
+      "date": "2026-07-08",
+      "close": 1275.9,
+      "open": 1297.0,
+      "high": 1302.3,
+      "low": 1271.6,
+      "volume": 19955877,
+      "changePct": 0.0,
+      "technicalScore": 0,
+      "technicalSignal": "HOLD",
+      "technicalConfidence": 80.0,
+      "technicalReason": "MACD Bearish, Price Below Bollinger Mid Band",
+      "volumeRatio": 1.64,
+      "volumeSignal": "VERY HIGH",
+      "rsi": 38.84,
+      "macd": -7.46,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 1318.1,
+          "volume": 12694362
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1318.1,
+          "volume": 12694362
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1318.1,
+          "volume": 12694362
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1318.1,
+          "volume": 12694362
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1318.1,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1318.1,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1318.1,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1318.1,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1318.1,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1301.0,
+          "volume": 13757656
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1301.0,
+          "volume": 13757656
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1301.0,
+          "volume": 13757656
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1301.0,
+          "volume": 13757656
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1301.0,
+          "volume": 13757656
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1293.9,
+          "volume": 15695263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1293.9,
+          "volume": 15695263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1293.9,
+          "volume": 15695263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1293.9,
+          "volume": 15695263
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1293.9,
+          "volume": 15695263
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1308.0,
+          "volume": 7001401
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1308.0,
+          "volume": 7001401
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1308.0,
+          "volume": 7001401
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1308.0,
+          "volume": 7001401
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1308.0,
+          "volume": 7001401
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1303.5,
+          "volume": 17795024
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1303.5,
+          "volume": 17795024
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1303.5,
+          "volume": 17795024
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1303.5,
+          "volume": 17795024
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1303.5,
+          "volume": 17795024
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1304.0,
+          "volume": 7839550
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1304.0,
+          "volume": 7839550
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1304.0,
+          "volume": 7839550
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1304.0,
+          "volume": 7839550
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1304.0,
+          "volume": 7837068
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1321.3,
+          "volume": 7610709
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1321.3,
+          "volume": 7610709
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1321.3,
+          "volume": 7610709
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1321.3,
+          "volume": 7610709
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1308.4,
+          "volume": 14335554
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1308.4,
+          "volume": 14335554
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1308.4,
+          "volume": 14335554
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1308.4,
+          "volume": 14333839
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1275.9,
+          "volume": 19955877
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1275.9,
+          "volume": 19955877
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1275.9,
+          "volume": 19955877
+        }
+      ]
+    },
+    {
+      "ticker": "SBIN",
+      "date": "2026-07-08",
+      "close": 1016.9,
+      "open": 1029.6,
+      "high": 1038.3,
+      "low": 1011.7,
+      "volume": 14139178,
+      "changePct": 0.0,
+      "technicalScore": -0.4,
+      "technicalSignal": "SELL",
+      "technicalConfidence": 60.0,
+      "technicalReason": "MACD Bearish, Price Below Bollinger Mid Band",
+      "volumeRatio": 1.26,
+      "volumeSignal": "HIGH",
+      "rsi": 46.87,
+      "macd": 8.221,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 1045.4,
+          "volume": 16002360
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1045.4,
+          "volume": 16002360
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1045.4,
+          "volume": 16002360
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1045.4,
+          "volume": 16002360
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1045.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1045.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1045.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1045.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 1045.4,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.1,
+          "volume": 16818246
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.1,
+          "volume": 16818246
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.1,
+          "volume": 16818246
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.1,
+          "volume": 16818246
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1036.1,
+          "volume": 16818246
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1026.9,
+          "volume": 11161643
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1026.9,
+          "volume": 11161643
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1026.9,
+          "volume": 11161643
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1026.9,
+          "volume": 11161643
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1026.9,
+          "volume": 11161643
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1047.4,
+          "volume": 6295315
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1047.4,
+          "volume": 6295315
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1047.4,
+          "volume": 6295315
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1047.4,
+          "volume": 6295315
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1047.4,
+          "volume": 6295315
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1051.6,
+          "volume": 14682790
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1051.6,
+          "volume": 14682790
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1051.6,
+          "volume": 14682790
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1051.6,
+          "volume": 14682790
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1051.6,
+          "volume": 14682790
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1040.0,
+          "volume": 10441493
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1040.0,
+          "volume": 10441493
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1040.0,
+          "volume": 10441493
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1040.0,
+          "volume": 10441493
+        },
+        {
+          "date": "2026-07-03",
+          "close": 1040.0,
+          "volume": 10438892
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1037.7,
+          "volume": 8761017
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1037.7,
+          "volume": 8761017
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1037.7,
+          "volume": 8761017
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1037.7,
+          "volume": 8761017
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1038.1,
+          "volume": 11053574
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1038.1,
+          "volume": 11053574
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1038.1,
+          "volume": 11053574
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1038.1,
+          "volume": 11052201
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1016.9,
+          "volume": 14139178
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1016.9,
+          "volume": 14139178
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1016.9,
+          "volume": 14139178
+        }
+      ]
+    },
+    {
+      "ticker": "TCS",
+      "date": "2026-07-08",
+      "close": 2057.5,
+      "open": 2094.0,
+      "high": 2109.7,
+      "low": 2048.8,
+      "volume": 3665004,
+      "changePct": 0.0,
+      "technicalScore": 0.6,
+      "technicalSignal": "STRONG BUY",
+      "technicalConfidence": 80.0,
+      "technicalReason": "MACD Bullish, Price Below Bollinger Mid Band",
+      "volumeRatio": 0.83,
+      "volumeSignal": "NORMAL",
+      "rsi": 41.5,
+      "macd": -51.219,
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 2094.7,
+          "volume": 4738903
+        },
+        {
+          "date": "2026-06-25",
+          "close": 2094.7,
+          "volume": 4738903
+        },
+        {
+          "date": "2026-06-25",
+          "close": 2094.7,
+          "volume": 4738903
+        },
+        {
+          "date": "2026-06-25",
+          "close": 2094.7,
+          "volume": 4738903
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2094.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2094.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2094.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2094.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-26",
+          "close": 2094.7,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2097.9,
+          "volume": 3412470
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2097.9,
+          "volume": 3412470
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2097.9,
+          "volume": 3412470
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2097.9,
+          "volume": 3412470
+        },
+        {
+          "date": "2026-06-29",
+          "close": 2097.9,
+          "volume": 3412470
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2031.5,
+          "volume": 6848411
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2031.5,
+          "volume": 6848411
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2031.5,
+          "volume": 6848411
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2031.5,
+          "volume": 6848411
+        },
+        {
+          "date": "2026-06-30",
+          "close": 2031.5,
+          "volume": 6848411
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1982.6,
+          "volume": 4658295
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1982.6,
+          "volume": 4658295
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1982.6,
+          "volume": 4658295
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1982.6,
+          "volume": 4658295
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1982.6,
+          "volume": 4658295
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2068.1,
+          "volume": 6040621
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2068.1,
+          "volume": 6040621
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2068.1,
+          "volume": 6040621
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2068.1,
+          "volume": 6040621
+        },
+        {
+          "date": "2026-07-02",
+          "close": 2068.1,
+          "volume": 6040621
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2093.5,
+          "volume": 4028819
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2093.5,
+          "volume": 4028819
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2093.5,
+          "volume": 4028819
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2093.5,
+          "volume": 4028819
+        },
+        {
+          "date": "2026-07-03",
+          "close": 2093.5,
+          "volume": 4027324
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2057.6,
+          "volume": 2567386
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2057.6,
+          "volume": 2567386
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2057.6,
+          "volume": 2567386
+        },
+        {
+          "date": "2026-07-06",
+          "close": 2057.6,
+          "volume": 2567386
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2096.1,
+          "volume": 4769048
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2096.1,
+          "volume": 4769048
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2096.1,
+          "volume": 4769048
+        },
+        {
+          "date": "2026-07-07",
+          "close": 2096.1,
+          "volume": 4768429
+        },
+        {
+          "date": "2026-07-08",
+          "close": 2057.5,
+          "volume": 3665004
+        },
+        {
+          "date": "2026-07-08",
+          "close": 2057.5,
+          "volume": 3665004
+        },
+        {
+          "date": "2026-07-08",
+          "close": 2057.5,
+          "volume": 3665004
+        }
+      ]
+    }
+  ],
+  "sectors": [
+    {
+      "sector": "AUTO",
+      "date": "2026-07-08",
+      "close": 26733.4,
+      "changePct": 0.0,
+      "volume": 0,
+      "newsScore": 0,
+      "signal": "NEUTRAL",
+      "confidence": 87.4,
+      "positiveArticles": 74,
+      "neutralArticles": 14,
+      "negativeArticles": 69,
+      "reason": "Mixed or neutral news sentiment",
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 26977.75
+        },
+        {
+          "date": "2026-06-25",
+          "close": 26977.75
+        },
+        {
+          "date": "2026-06-25",
+          "close": 26977.75
+        },
+        {
+          "date": "2026-06-25",
+          "close": 26977.75
+        },
+        {
+          "date": "2026-06-25",
+          "close": 26977.75
+        },
+        {
+          "date": "2026-06-29",
+          "close": 26417.6
+        },
+        {
+          "date": "2026-06-29",
+          "close": 26417.6
+        },
+        {
+          "date": "2026-06-29",
+          "close": 26417.6
+        },
+        {
+          "date": "2026-06-29",
+          "close": 26417.6
+        },
+        {
+          "date": "2026-06-30",
+          "close": 26479.8
+        },
+        {
+          "date": "2026-06-30",
+          "close": 26479.8
+        },
+        {
+          "date": "2026-06-30",
+          "close": 26479.8
+        },
+        {
+          "date": "2026-06-30",
+          "close": 26479.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 26783.2
+        },
+        {
+          "date": "2026-07-01",
+          "close": 26783.2
+        },
+        {
+          "date": "2026-07-01",
+          "close": 26783.2
+        },
+        {
+          "date": "2026-07-01",
+          "close": 26783.2
+        },
+        {
+          "date": "2026-07-02",
+          "close": 27108.2
+        },
+        {
+          "date": "2026-07-02",
+          "close": 27108.2
+        },
+        {
+          "date": "2026-07-02",
+          "close": 27108.2
+        },
+        {
+          "date": "2026-07-02",
+          "close": 27108.2
+        },
+        {
+          "date": "2026-07-03",
+          "close": 26988.1
+        },
+        {
+          "date": "2026-07-03",
+          "close": 26988.1
+        },
+        {
+          "date": "2026-07-03",
+          "close": 26988.1
+        },
+        {
+          "date": "2026-07-03",
+          "close": 26988.1
+        },
+        {
+          "date": "2026-07-03",
+          "close": 26988.1
+        },
+        {
+          "date": "2026-07-07",
+          "close": 27343.5
+        },
+        {
+          "date": "2026-07-08",
+          "close": 26733.4
+        },
+        {
+          "date": "2026-07-08",
+          "close": 26733.4
+        },
+        {
+          "date": "2026-07-08",
+          "close": 26733.4
+        }
+      ]
+    },
+    {
+      "sector": "BANK",
+      "date": "2026-07-08",
+      "close": 56742.6,
+      "changePct": 0.0,
+      "volume": 0,
+      "newsScore": 0,
+      "signal": "NEUTRAL",
+      "confidence": 0,
+      "positiveArticles": 0,
+      "neutralArticles": 0,
+      "negativeArticles": 0,
+      "reason": "No scored news reason available",
+      "series": [
+        {
+          "date": "2026-06-30",
+          "close": 57542.9
+        },
+        {
+          "date": "2026-06-30",
+          "close": 57542.9
+        },
+        {
+          "date": "2026-06-30",
+          "close": 57542.9
+        },
+        {
+          "date": "2026-06-30",
+          "close": 57542.9
+        },
+        {
+          "date": "2026-07-01",
+          "close": 58033.05
+        },
+        {
+          "date": "2026-07-01",
+          "close": 58033.05
+        },
+        {
+          "date": "2026-07-01",
+          "close": 58033.05
+        },
+        {
+          "date": "2026-07-01",
+          "close": 58033.05
+        },
+        {
+          "date": "2026-07-01",
+          "close": 58033.05
+        },
+        {
+          "date": "2026-07-02",
+          "close": 58031.65
+        },
+        {
+          "date": "2026-07-02",
+          "close": 58031.65
+        },
+        {
+          "date": "2026-07-02",
+          "close": 58031.65
+        },
+        {
+          "date": "2026-07-02",
+          "close": 58031.65
+        },
+        {
+          "date": "2026-07-02",
+          "close": 58031.65
+        },
+        {
+          "date": "2026-07-03",
+          "close": 57938.5
+        },
+        {
+          "date": "2026-07-03",
+          "close": 57938.5
+        },
+        {
+          "date": "2026-07-03",
+          "close": 57938.5
+        },
+        {
+          "date": "2026-07-03",
+          "close": 57938.5
+        },
+        {
+          "date": "2026-07-03",
+          "close": 57938.5
+        },
+        {
+          "date": "2026-07-06",
+          "close": 58291.5
+        },
+        {
+          "date": "2026-07-06",
+          "close": 58291.5
+        },
+        {
+          "date": "2026-07-06",
+          "close": 58291.5
+        },
+        {
+          "date": "2026-07-06",
+          "close": 58291.5
+        },
+        {
+          "date": "2026-07-07",
+          "close": 58200.7
+        },
+        {
+          "date": "2026-07-07",
+          "close": 58200.7
+        },
+        {
+          "date": "2026-07-07",
+          "close": 58200.7
+        },
+        {
+          "date": "2026-07-07",
+          "close": 58200.7
+        },
+        {
+          "date": "2026-07-08",
+          "close": 56742.6
+        },
+        {
+          "date": "2026-07-08",
+          "close": 56742.6
+        },
+        {
+          "date": "2026-07-08",
+          "close": 56742.6
+        }
+      ]
+    },
+    {
+      "sector": "FMCG",
+      "date": "2026-07-08",
+      "close": 48977.4,
+      "changePct": 0.0,
+      "volume": 0,
+      "newsScore": 0,
+      "signal": "NEUTRAL",
+      "confidence": 9.59,
+      "positiveArticles": 1,
+      "neutralArticles": 0,
+      "negativeArticles": 1,
+      "reason": "Mixed or neutral news sentiment",
+      "series": [
+        {
+          "date": "2026-06-25",
+          "close": 49419.25
+        },
+        {
+          "date": "2026-06-25",
+          "close": 49419.25
+        },
+        {
+          "date": "2026-06-25",
+          "close": 49419.25
+        },
+        {
+          "date": "2026-06-25",
+          "close": 49419.25
+        },
+        {
+          "date": "2026-06-25",
+          "close": 49419.25
+        },
+        {
+          "date": "2026-06-29",
+          "close": 49127.65
+        },
+        {
+          "date": "2026-06-29",
+          "close": 49127.65
+        },
+        {
+          "date": "2026-06-29",
+          "close": 49127.65
+        },
+        {
+          "date": "2026-06-29",
+          "close": 49127.65
+        },
+        {
+          "date": "2026-06-30",
+          "close": 48794.2
+        },
+        {
+          "date": "2026-06-30",
+          "close": 48794.2
+        },
+        {
+          "date": "2026-06-30",
+          "close": 48794.2
+        },
+        {
+          "date": "2026-06-30",
+          "close": 48794.2
+        },
+        {
+          "date": "2026-07-01",
+          "close": 49806.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 49806.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 49806.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 49806.8
+        },
+        {
+          "date": "2026-07-02",
+          "close": 50084.7
+        },
+        {
+          "date": "2026-07-02",
+          "close": 50084.7
+        },
+        {
+          "date": "2026-07-02",
+          "close": 50084.7
+        },
+        {
+          "date": "2026-07-02",
+          "close": 50084.7
+        },
+        {
+          "date": "2026-07-03",
+          "close": 50096.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 50096.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 50096.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 50096.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 50096.4
+        },
+        {
+          "date": "2026-07-07",
+          "close": 50225.85
+        },
+        {
+          "date": "2026-07-08",
+          "close": 48977.4
+        },
+        {
+          "date": "2026-07-08",
+          "close": 48977.4
+        },
+        {
+          "date": "2026-07-08",
+          "close": 48977.4
+        }
+      ]
+    },
+    {
+      "sector": "IT",
+      "date": "2026-07-08",
+      "close": 27555.2,
+      "changePct": 0.0,
+      "volume": 0,
+      "newsScore": 0,
+      "signal": "NEUTRAL",
+      "confidence": 78.76,
+      "positiveArticles": 6,
+      "neutralArticles": 3,
+      "negativeArticles": 14,
+      "reason": "Mixed or neutral news sentiment",
+      "series": [
+        {
+          "date": "2026-06-30",
+          "close": 26299.05
+        },
+        {
+          "date": "2026-06-30",
+          "close": 26299.05
+        },
+        {
+          "date": "2026-06-30",
+          "close": 26299.05
+        },
+        {
+          "date": "2026-06-30",
+          "close": 26299.05
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25769.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25769.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25769.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25769.8
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25769.8
+        },
+        {
+          "date": "2026-07-02",
+          "close": 26965.05
+        },
+        {
+          "date": "2026-07-02",
+          "close": 26965.05
+        },
+        {
+          "date": "2026-07-02",
+          "close": 26965.05
+        },
+        {
+          "date": "2026-07-02",
+          "close": 26965.05
+        },
+        {
+          "date": "2026-07-02",
+          "close": 26965.05
+        },
+        {
+          "date": "2026-07-03",
+          "close": 27439.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 27439.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 27439.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 27439.4
+        },
+        {
+          "date": "2026-07-03",
+          "close": 27439.4
+        },
+        {
+          "date": "2026-07-06",
+          "close": 27276.45
+        },
+        {
+          "date": "2026-07-06",
+          "close": 27276.45
+        },
+        {
+          "date": "2026-07-06",
+          "close": 27276.45
+        },
+        {
+          "date": "2026-07-06",
+          "close": 27276.45
+        },
+        {
+          "date": "2026-07-07",
+          "close": 27939.15
+        },
+        {
+          "date": "2026-07-07",
+          "close": 27939.15
+        },
+        {
+          "date": "2026-07-07",
+          "close": 27939.15
+        },
+        {
+          "date": "2026-07-07",
+          "close": 27939.15
+        },
+        {
+          "date": "2026-07-08",
+          "close": 27555.2
+        },
+        {
+          "date": "2026-07-08",
+          "close": 27555.2
+        },
+        {
+          "date": "2026-07-08",
+          "close": 27555.2
+        }
+      ]
+    },
+    {
+      "sector": "PHARMA",
+      "date": "2026-07-08",
+      "close": 25429.8,
+      "changePct": 0.0,
+      "volume": 0,
+      "newsScore": 1.0,
+      "signal": "VERY BULLISH",
+      "confidence": 51.19,
+      "positiveArticles": 10,
+      "neutralArticles": 0,
+      "negativeArticles": 1,
+      "reason": "Predominantly positive news sentiment (10 positive articles)",
+      "series": [
+        {
+          "date": "2026-06-30",
+          "close": 25326.4
+        },
+        {
+          "date": "2026-06-30",
+          "close": 25326.4
+        },
+        {
+          "date": "2026-06-30",
+          "close": 25326.4
+        },
+        {
+          "date": "2026-06-30",
+          "close": 25326.4
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25182.7
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25182.7
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25182.7
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25182.7
+        },
+        {
+          "date": "2026-07-01",
+          "close": 25182.7
+        },
+        {
+          "date": "2026-07-02",
+          "close": 25308.9
+        },
+        {
+          "date": "2026-07-02",
+          "close": 25308.9
+        },
+        {
+          "date": "2026-07-02",
+          "close": 25308.9
+        },
+        {
+          "date": "2026-07-02",
+          "close": 25308.9
+        },
+        {
+          "date": "2026-07-02",
+          "close": 25308.9
+        },
+        {
+          "date": "2026-07-03",
+          "close": 25745.15
+        },
+        {
+          "date": "2026-07-03",
+          "close": 25745.15
+        },
+        {
+          "date": "2026-07-03",
+          "close": 25745.15
+        },
+        {
+          "date": "2026-07-03",
+          "close": 25745.15
+        },
+        {
+          "date": "2026-07-03",
+          "close": 25745.15
+        },
+        {
+          "date": "2026-07-06",
+          "close": 25866.25
+        },
+        {
+          "date": "2026-07-06",
+          "close": 25866.25
+        },
+        {
+          "date": "2026-07-06",
+          "close": 25866.25
+        },
+        {
+          "date": "2026-07-06",
+          "close": 25866.25
+        },
+        {
+          "date": "2026-07-07",
+          "close": 25677.7
+        },
+        {
+          "date": "2026-07-07",
+          "close": 25677.7
+        },
+        {
+          "date": "2026-07-07",
+          "close": 25677.7
+        },
+        {
+          "date": "2026-07-07",
+          "close": 25677.7
+        },
+        {
+          "date": "2026-07-08",
+          "close": 25429.8
+        },
+        {
+          "date": "2026-07-08",
+          "close": 25429.8
+        },
+        {
+          "date": "2026-07-08",
+          "close": 25429.8
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 96.27,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" width=\"75\" /> In its Q4FY24 ",
+      "url": "https://www.moneycontrol.com/news/business/icici-prudential-life-insurance-to-focusgrowing-absolute-vnb-amid-slumpfy24_17532041.html"
+    },
+    {
+      "title": "ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 96.27,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" width=\"75\" /> In its Q4FY24 ",
+      "url": "https://www.moneycontrol.com/news/business/icici-prudential-life-insurance-to-focusgrowing-absolute-vnb-amid-slumpfy24_17532041.html"
+    },
+    {
+      "title": "ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 96.27,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" width=\"75\" /> In its Q4FY24 ",
+      "url": "https://www.moneycontrol.com/news/business/icici-prudential-life-insurance-to-focusgrowing-absolute-vnb-amid-slumpfy24_17532041.html"
+    },
+    {
+      "title": "ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 96.27,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" width=\"75\" /> In its Q4FY24 ",
+      "url": "https://www.moneycontrol.com/news/business/icici-prudential-life-insurance-to-focusgrowing-absolute-vnb-amid-slumpfy24_17532041.html"
+    },
+    {
+      "title": "ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 96.27,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24\" width=\"75\" /> In its Q4FY24 ",
+      "url": "https://www.moneycontrol.com/news/business/icici-prudential-life-insurance-to-focusgrowing-absolute-vnb-amid-slumpfy24_17532041.html"
+    },
+    {
+      "title": "Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 97.33,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/T/TATA-ELXSI_200.jpg\" title=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" width=\"75\" /> The net profit ",
+      "url": "https://www.moneycontrol.com/news/business/tata-elxsi-q4-net-profit-revenue-decline-qoq-firm-declares-dividendrs-70-per-share_17532061.html"
+    },
+    {
+      "title": "Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 97.33,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/T/TATA-ELXSI_200.jpg\" title=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" width=\"75\" /> The net profit ",
+      "url": "https://www.moneycontrol.com/news/business/tata-elxsi-q4-net-profit-revenue-decline-qoq-firm-declares-dividendrs-70-per-share_17532061.html"
+    },
+    {
+      "title": "Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 97.33,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/T/TATA-ELXSI_200.jpg\" title=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" width=\"75\" /> The net profit ",
+      "url": "https://www.moneycontrol.com/news/business/tata-elxsi-q4-net-profit-revenue-decline-qoq-firm-declares-dividendrs-70-per-share_17532061.html"
+    },
+    {
+      "title": "Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 97.33,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/T/TATA-ELXSI_200.jpg\" title=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" width=\"75\" /> The net profit ",
+      "url": "https://www.moneycontrol.com/news/business/tata-elxsi-q4-net-profit-revenue-decline-qoq-firm-declares-dividendrs-70-per-share_17532061.html"
+    },
+    {
+      "title": "Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 97.33,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/T/TATA-ELXSI_200.jpg\" title=\"Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share\" width=\"75\" /> The net profit ",
+      "url": "https://www.moneycontrol.com/news/business/tata-elxsi-q4-net-profit-revenue-decline-qoq-firm-declares-dividendrs-70-per-share_17532061.html"
+    },
+    {
+      "title": "ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 94.24,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" width=\"75\" /> Net premium income ros",
+      "url": "https://www.moneycontrol.com/news/business/icici-pru-life-q4-net-profit-falls-26-to-rs-174-cr-insurer-announces-dividend_17532101.html"
+    },
+    {
+      "title": "ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 94.24,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" width=\"75\" /> Net premium income ros",
+      "url": "https://www.moneycontrol.com/news/business/icici-pru-life-q4-net-profit-falls-26-to-rs-174-cr-insurer-announces-dividend_17532101.html"
+    },
+    {
+      "title": "ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 94.24,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" width=\"75\" /> Net premium income ros",
+      "url": "https://www.moneycontrol.com/news/business/icici-pru-life-q4-net-profit-falls-26-to-rs-174-cr-insurer-announces-dividend_17532101.html"
+    },
+    {
+      "title": "ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 94.24,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" width=\"75\" /> Net premium income ros",
+      "url": "https://www.moneycontrol.com/news/business/icici-pru-life-q4-net-profit-falls-26-to-rs-174-cr-insurer-announces-dividend_17532101.html"
+    },
+    {
+      "title": "ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend",
+      "sector": "BANKING",
+      "sentiment": "negative",
+      "confidence": 94.24,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/I/ICICI-Prudential-life_200.jpg\" title=\"ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend\" width=\"75\" /> Net premium income ros",
+      "url": "https://www.moneycontrol.com/news/business/icici-pru-life-q4-net-profit-falls-26-to-rs-174-cr-insurer-announces-dividend_17532101.html"
+    },
+    {
+      "title": "Cyient DLM#39;s profit after tax in FY24 surges 93%",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.99,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/s/shutterstock_2170560599_200.jpg\" title=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" width=\"75\" /> For the full year, the company#39;s revenue stood at Rs 1,192 crore, which w",
+      "url": "https://www.moneycontrol.com/news/business/cyient-dlm39s-profit-after-taxfy24-surges-93_17532091.html"
+    },
+    {
+      "title": "Cyient DLM#39;s profit after tax in FY24 surges 93%",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.99,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/s/shutterstock_2170560599_200.jpg\" title=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" width=\"75\" /> For the full year, the company#39;s revenue stood at Rs 1,192 crore, which w",
+      "url": "https://www.moneycontrol.com/news/business/cyient-dlm39s-profit-after-taxfy24-surges-93_17532091.html"
+    },
+    {
+      "title": "Cyient DLM#39;s profit after tax in FY24 surges 93%",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.99,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/s/shutterstock_2170560599_200.jpg\" title=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" width=\"75\" /> For the full year, the company#39;s revenue stood at Rs 1,192 crore, which w",
+      "url": "https://www.moneycontrol.com/news/business/cyient-dlm39s-profit-after-taxfy24-surges-93_17532091.html"
+    },
+    {
+      "title": "Cyient DLM#39;s profit after tax in FY24 surges 93%",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.99,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/s/shutterstock_2170560599_200.jpg\" title=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" width=\"75\" /> For the full year, the company#39;s revenue stood at Rs 1,192 crore, which w",
+      "url": "https://www.moneycontrol.com/news/business/cyient-dlm39s-profit-after-taxfy24-surges-93_17532091.html"
+    },
+    {
+      "title": "Cyient DLM#39;s profit after tax in FY24 surges 93%",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.99,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/s/shutterstock_2170560599_200.jpg\" title=\"Cyient DLM#39;s profit after tax in FY24 surges 93%\" width=\"75\" /> For the full year, the company#39;s revenue stood at Rs 1,192 crore, which w",
+      "url": "https://www.moneycontrol.com/news/business/cyient-dlm39s-profit-after-taxfy24-surges-93_17532091.html"
+    },
+    {
+      "title": "Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 88.58,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/t/tcpl_200.jpg\" title=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" width=\"75\" /> Revenue",
+      "url": "https://www.moneycontrol.com/news/business/tata-consumer-q4-net-profit-falls-19-to-rs-217-cr-firm-declares-dividendrs-775-per-share_17532071.html"
+    },
+    {
+      "title": "Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 88.58,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/t/tcpl_200.jpg\" title=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" width=\"75\" /> Revenue",
+      "url": "https://www.moneycontrol.com/news/business/tata-consumer-q4-net-profit-falls-19-to-rs-217-cr-firm-declares-dividendrs-775-per-share_17532071.html"
+    },
+    {
+      "title": "Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 88.58,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/t/tcpl_200.jpg\" title=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" width=\"75\" /> Revenue",
+      "url": "https://www.moneycontrol.com/news/business/tata-consumer-q4-net-profit-falls-19-to-rs-217-cr-firm-declares-dividendrs-775-per-share_17532071.html"
+    },
+    {
+      "title": "Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 88.58,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/t/tcpl_200.jpg\" title=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" width=\"75\" /> Revenue",
+      "url": "https://www.moneycontrol.com/news/business/tata-consumer-q4-net-profit-falls-19-to-rs-217-cr-firm-declares-dividendrs-775-per-share_17532071.html"
+    },
+    {
+      "title": "Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 88.58,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/t/tcpl_200.jpg\" title=\"Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share\" width=\"75\" /> Revenue",
+      "url": "https://www.moneycontrol.com/news/business/tata-consumer-q4-net-profit-falls-19-to-rs-217-cr-firm-declares-dividendrs-775-per-share_17532071.html"
+    },
+    {
+      "title": "Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 48.34,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/H/HUL_HIndustan-Unilever_200.jpg\" title=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" width=\"75",
+      "url": "https://www.moneycontrol.com/news/business/hindustan-unilever-q4-preview-price-cuts-slow-demand-regional-competition-to-hurt-topline_17531901.html"
+    },
+    {
+      "title": "Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 48.34,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/H/HUL_HIndustan-Unilever_200.jpg\" title=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" width=\"75",
+      "url": "https://www.moneycontrol.com/news/business/hindustan-unilever-q4-preview-price-cuts-slow-demand-regional-competition-to-hurt-topline_17531901.html"
+    },
+    {
+      "title": "Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 48.34,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/H/HUL_HIndustan-Unilever_200.jpg\" title=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" width=\"75",
+      "url": "https://www.moneycontrol.com/news/business/hindustan-unilever-q4-preview-price-cuts-slow-demand-regional-competition-to-hurt-topline_17531901.html"
+    },
+    {
+      "title": "Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 48.34,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/H/HUL_HIndustan-Unilever_200.jpg\" title=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" width=\"75",
+      "url": "https://www.moneycontrol.com/news/business/hindustan-unilever-q4-preview-price-cuts-slow-demand-regional-competition-to-hurt-topline_17531901.html"
+    },
+    {
+      "title": "Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 48.34,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2020/200x200/H/HUL_HIndustan-Unilever_200.jpg\" title=\"Hindustan Unilever Q4 Preview: Price cuts, slow demand, regional competition to hurt topline\" width=\"75",
+      "url": "https://www.moneycontrol.com/news/business/hindustan-unilever-q4-preview-price-cuts-slow-demand-regional-competition-to-hurt-topline_17531901.html"
+    },
+    {
+      "title": "LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 94.5,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/LTIMindtree_200.jpg\" title=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" width=\"75\" /> A compilation of estimat",
+      "url": "https://www.moneycontrol.com/news/business/ltimindtree-q4-preview-lower-pass-through-revenue-seen-impacting-growth-marginally_17531881.html"
+    },
+    {
+      "title": "LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 94.5,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/LTIMindtree_200.jpg\" title=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" width=\"75\" /> A compilation of estimat",
+      "url": "https://www.moneycontrol.com/news/business/ltimindtree-q4-preview-lower-pass-through-revenue-seen-impacting-growth-marginally_17531881.html"
+    },
+    {
+      "title": "LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 94.5,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/LTIMindtree_200.jpg\" title=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" width=\"75\" /> A compilation of estimat",
+      "url": "https://www.moneycontrol.com/news/business/ltimindtree-q4-preview-lower-pass-through-revenue-seen-impacting-growth-marginally_17531881.html"
+    },
+    {
+      "title": "LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 94.5,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/LTIMindtree_200.jpg\" title=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" width=\"75\" /> A compilation of estimat",
+      "url": "https://www.moneycontrol.com/news/business/ltimindtree-q4-preview-lower-pass-through-revenue-seen-impacting-growth-marginally_17531881.html"
+    },
+    {
+      "title": "LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 94.5,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/LTIMindtree_200.jpg\" title=\"LTIMindtree Q4 Preview: Lower pass-through revenue seen impacting growth marginally\" width=\"75\" /> A compilation of estimat",
+      "url": "https://www.moneycontrol.com/news/business/ltimindtree-q4-preview-lower-pass-through-revenue-seen-impacting-growth-marginally_17531881.html"
+    },
+    {
+      "title": "LT manufactures hydrotreating reactor for refinery in Mexico",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 93.95,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LT manufactures hydrotreating reactor for refinery in Mexico\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/Larsen-Toubro_LT_200.jpg\" title=\"LT manufactures hydrotreating reactor for refinery in Mexico\" width=\"75\" /> The reactor has been dispatched for Mexico from the company#39;s ",
+      "url": "https://www.moneycontrol.com/news/business/lt-manufactures-hydrotreating-reactor-for-refinerymexico_17531811.html"
+    },
+    {
+      "title": "LT manufactures hydrotreating reactor for refinery in Mexico",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 93.95,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LT manufactures hydrotreating reactor for refinery in Mexico\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/Larsen-Toubro_LT_200.jpg\" title=\"LT manufactures hydrotreating reactor for refinery in Mexico\" width=\"75\" /> The reactor has been dispatched for Mexico from the company#39;s ",
+      "url": "https://www.moneycontrol.com/news/business/lt-manufactures-hydrotreating-reactor-for-refinerymexico_17531811.html"
+    },
+    {
+      "title": "LT manufactures hydrotreating reactor for refinery in Mexico",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 93.95,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LT manufactures hydrotreating reactor for refinery in Mexico\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/Larsen-Toubro_LT_200.jpg\" title=\"LT manufactures hydrotreating reactor for refinery in Mexico\" width=\"75\" /> The reactor has been dispatched for Mexico from the company#39;s ",
+      "url": "https://www.moneycontrol.com/news/business/lt-manufactures-hydrotreating-reactor-for-refinerymexico_17531811.html"
+    },
+    {
+      "title": "LT manufactures hydrotreating reactor for refinery in Mexico",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 93.95,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LT manufactures hydrotreating reactor for refinery in Mexico\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/Larsen-Toubro_LT_200.jpg\" title=\"LT manufactures hydrotreating reactor for refinery in Mexico\" width=\"75\" /> The reactor has been dispatched for Mexico from the company#39;s ",
+      "url": "https://www.moneycontrol.com/news/business/lt-manufactures-hydrotreating-reactor-for-refinerymexico_17531811.html"
+    },
+    {
+      "title": "LT manufactures hydrotreating reactor for refinery in Mexico",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 93.95,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"LT manufactures hydrotreating reactor for refinery in Mexico\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2023/200x200/L/Larsen-Toubro_LT_200.jpg\" title=\"LT manufactures hydrotreating reactor for refinery in Mexico\" width=\"75\" /> The reactor has been dispatched for Mexico from the company#39;s ",
+      "url": "https://www.moneycontrol.com/news/business/lt-manufactures-hydrotreating-reactor-for-refinerymexico_17531811.html"
+    },
+    {
+      "title": "Air India enters into codeshare pact with Japan#39;s All Nippon Airways",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 87.96,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/B/BOEING-747-AI_200.jpg\" title=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" width=\"75\" /> With the codeshare, effective for travel from ",
+      "url": "https://www.moneycontrol.com/news/business/air-india-enters-into-codeshare-pactjapan39s-all-nippon-airways_17531801.html"
+    },
+    {
+      "title": "Air India enters into codeshare pact with Japan#39;s All Nippon Airways",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 87.96,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/B/BOEING-747-AI_200.jpg\" title=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" width=\"75\" /> With the codeshare, effective for travel from ",
+      "url": "https://www.moneycontrol.com/news/business/air-india-enters-into-codeshare-pactjapan39s-all-nippon-airways_17531801.html"
+    },
+    {
+      "title": "Air India enters into codeshare pact with Japan#39;s All Nippon Airways",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 87.96,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/B/BOEING-747-AI_200.jpg\" title=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" width=\"75\" /> With the codeshare, effective for travel from ",
+      "url": "https://www.moneycontrol.com/news/business/air-india-enters-into-codeshare-pactjapan39s-all-nippon-airways_17531801.html"
+    },
+    {
+      "title": "Air India enters into codeshare pact with Japan#39;s All Nippon Airways",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 87.96,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/B/BOEING-747-AI_200.jpg\" title=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" width=\"75\" /> With the codeshare, effective for travel from ",
+      "url": "https://www.moneycontrol.com/news/business/air-india-enters-into-codeshare-pactjapan39s-all-nippon-airways_17531801.html"
+    },
+    {
+      "title": "Air India enters into codeshare pact with Japan#39;s All Nippon Airways",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 87.96,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/B/BOEING-747-AI_200.jpg\" title=\"Air India enters into codeshare pact with Japan#39;s All Nippon Airways\" width=\"75\" /> With the codeshare, effective for travel from ",
+      "url": "https://www.moneycontrol.com/news/business/air-india-enters-into-codeshare-pactjapan39s-all-nippon-airways_17531801.html"
+    },
+    {
+      "title": "Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 83.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/R/RazorPay-Image_200.jpg\" title=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" width=\"75\" /> Boosting success rates by 4-5 p",
+      "url": "https://www.moneycontrol.com/news/business/razorpay-announces-39upi-switch39partnershipairtel-payments-bank_17531791.html"
+    },
+    {
+      "title": "Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 83.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/R/RazorPay-Image_200.jpg\" title=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" width=\"75\" /> Boosting success rates by 4-5 p",
+      "url": "https://www.moneycontrol.com/news/business/razorpay-announces-39upi-switch39partnershipairtel-payments-bank_17531791.html"
+    },
+    {
+      "title": "Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 83.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/R/RazorPay-Image_200.jpg\" title=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" width=\"75\" /> Boosting success rates by 4-5 p",
+      "url": "https://www.moneycontrol.com/news/business/razorpay-announces-39upi-switch39partnershipairtel-payments-bank_17531791.html"
+    },
+    {
+      "title": "Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 83.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/R/RazorPay-Image_200.jpg\" title=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" width=\"75\" /> Boosting success rates by 4-5 p",
+      "url": "https://www.moneycontrol.com/news/business/razorpay-announces-39upi-switch39partnershipairtel-payments-bank_17531791.html"
+    },
+    {
+      "title": "Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 83.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/R/RazorPay-Image_200.jpg\" title=\"Razorpay announces #39;UPI Switch#39; in partnership with Airtel Payments Bank\" width=\"75\" /> Boosting success rates by 4-5 p",
+      "url": "https://www.moneycontrol.com/news/business/razorpay-announces-39upi-switch39partnershipairtel-payments-bank_17531791.html"
+    },
+    {
+      "title": "Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.48,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/S/Stellantis_Jul8_200.jpg\" title=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" width=\"75\" /> This price increase will result in an incr",
+      "url": "https://www.moneycontrol.com/news/business/stellantis-india-to-hike-vehicle-prices-byto-rs-17000april-30_17531771.html"
+    },
+    {
+      "title": "Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.48,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/S/Stellantis_Jul8_200.jpg\" title=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" width=\"75\" /> This price increase will result in an incr",
+      "url": "https://www.moneycontrol.com/news/business/stellantis-india-to-hike-vehicle-prices-byto-rs-17000april-30_17531771.html"
+    },
+    {
+      "title": "Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.48,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/S/Stellantis_Jul8_200.jpg\" title=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" width=\"75\" /> This price increase will result in an incr",
+      "url": "https://www.moneycontrol.com/news/business/stellantis-india-to-hike-vehicle-prices-byto-rs-17000april-30_17531771.html"
+    },
+    {
+      "title": "Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.48,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/S/Stellantis_Jul8_200.jpg\" title=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" width=\"75\" /> This price increase will result in an incr",
+      "url": "https://www.moneycontrol.com/news/business/stellantis-india-to-hike-vehicle-prices-byto-rs-17000april-30_17531771.html"
+    },
+    {
+      "title": "Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.48,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/S/Stellantis_Jul8_200.jpg\" title=\"Stellantis India to hike vehicle prices by up to Rs 17,000 from April 30\" width=\"75\" /> This price increase will result in an incr",
+      "url": "https://www.moneycontrol.com/news/business/stellantis-india-to-hike-vehicle-prices-byto-rs-17000april-30_17531771.html"
+    },
+    {
+      "title": "Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 88.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/T/Tata-Power_200.jpg\" title=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" width=\"75\" /> \"The project is the first win",
+      "url": "https://www.moneycontrol.com/news/business/juniper-green-energy-tata-power-sign-ppa-for-85-mw-hybrid-projectmaharashtra_17531681.html"
+    },
+    {
+      "title": "Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 88.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/T/Tata-Power_200.jpg\" title=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" width=\"75\" /> \"The project is the first win",
+      "url": "https://www.moneycontrol.com/news/business/juniper-green-energy-tata-power-sign-ppa-for-85-mw-hybrid-projectmaharashtra_17531681.html"
+    },
+    {
+      "title": "Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 88.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/T/Tata-Power_200.jpg\" title=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" width=\"75\" /> \"The project is the first win",
+      "url": "https://www.moneycontrol.com/news/business/juniper-green-energy-tata-power-sign-ppa-for-85-mw-hybrid-projectmaharashtra_17531681.html"
+    },
+    {
+      "title": "Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 88.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/T/Tata-Power_200.jpg\" title=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" width=\"75\" /> \"The project is the first win",
+      "url": "https://www.moneycontrol.com/news/business/juniper-green-energy-tata-power-sign-ppa-for-85-mw-hybrid-projectmaharashtra_17531681.html"
+    },
+    {
+      "title": "Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 88.04,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2024/200x200/T/Tata-Power_200.jpg\" title=\"Juniper Green Energy, Tata Power sign PPA for 85 MW hybrid project in Maharashtra\" width=\"75\" /> \"The project is the first win",
+      "url": "https://www.moneycontrol.com/news/business/juniper-green-energy-tata-power-sign-ppa-for-85-mw-hybrid-projectmaharashtra_17531681.html"
+    },
+    {
+      "title": "WeWork Global in talks to sell entire 27% stake in WeWork India",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 85.31,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/W/WEWORK_200.jpg\" title=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" width=\"75\" /> Bengaluru-based real estate firm Embassy Group, which holds the remai",
+      "url": "https://www.moneycontrol.com/news/business/wework-globaltalks-to-sell-entire-27-stakewework-india_17531651.html"
+    },
+    {
+      "title": "WeWork Global in talks to sell entire 27% stake in WeWork India",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 85.31,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/W/WEWORK_200.jpg\" title=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" width=\"75\" /> Bengaluru-based real estate firm Embassy Group, which holds the remai",
+      "url": "https://www.moneycontrol.com/news/business/wework-globaltalks-to-sell-entire-27-stakewework-india_17531651.html"
+    },
+    {
+      "title": "WeWork Global in talks to sell entire 27% stake in WeWork India",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 85.31,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/W/WEWORK_200.jpg\" title=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" width=\"75\" /> Bengaluru-based real estate firm Embassy Group, which holds the remai",
+      "url": "https://www.moneycontrol.com/news/business/wework-globaltalks-to-sell-entire-27-stakewework-india_17531651.html"
+    },
+    {
+      "title": "WeWork Global in talks to sell entire 27% stake in WeWork India",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 85.31,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/W/WEWORK_200.jpg\" title=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" width=\"75\" /> Bengaluru-based real estate firm Embassy Group, which holds the remai",
+      "url": "https://www.moneycontrol.com/news/business/wework-globaltalks-to-sell-entire-27-stakewework-india_17531651.html"
+    },
+    {
+      "title": "WeWork Global in talks to sell entire 27% stake in WeWork India",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 85.31,
+      "source": "Moneycontrol",
+      "published_at": "nan",
+      "description": "<img align=\" left\" alt=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" border=\"0\" height=\"75\" hspace=\"5\" src=\"https://www.moneycontrol.com/news_image_files/2021/200x200/W/WEWORK_200.jpg\" title=\"WeWork Global in talks to sell entire 27% stake in WeWork India\" width=\"75\" /> Bengaluru-based real estate firm Embassy Group, which holds the remai",
+      "url": "https://www.moneycontrol.com/news/business/wework-globaltalks-to-sell-entire-27-stakewework-india_17531651.html"
+    },
+    {
+      "title": "KPIT Tech shares plunge 25% in five days to nearly four-year low after weak revenue outlook. Is the worst over?",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 97.31,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "KPIT Technologies shares dropped 25% to ₹558.65 this week following a weak business outlook, wiping out ₹5,061 crore in market capitalisation. Brokerages downgraded the stock amid concerns over revenue declines and uncertain recovery, while the stock has already lost 52.35% so far in 2026.",
+      "url": "https://www.livemint.com/market/stock-market-news/kpit-tech-shares-plunge-25-in-five-days-to-nearly-four-year-low-after-weak-revenue-outlook-is-the-worst-over-11783091888730.html"
+    },
+    {
+      "title": "Gold, silver prices today: Comex gold and silver extend rally as weak US jobs data cools Fed rate hike fears",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 66.92,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Gold and silver prices rose on 3 July as easing rate hike fears followed a weak US jobs report. Comex gold futures climbed to $4,208, while silver futures reached $63.50. Employment data indicated a slowdown, lowering rate-hike expectations and negatively impacting the dollar.",
+      "url": "https://www.livemint.com/market/commodities/gold-silver-prices-today-comex-gold-and-silver-extend-rally-as-weak-us-jobs-data-cools-fed-rate-hike-fears-11783007280731.html"
+    },
+    {
+      "title": "Pulse of the Street: Realty and healthcare lifts markets, but weak rupee clouds rally",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 93.89,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Markets rose nearly 1% this week as softer crude oil prices, easing volatility and buying in real estate, healthcare and consumption stocks lifted sentiment. However, weakness in capital goods and power, along with continued pressure on the rupee, showed that the recovery remained selective",
+      "url": "https://www.livemint.com/market/realty-and-healthcare-lifts-markets-but-weak-rupee-clouds-rally-11783082572693.html"
+    },
+    {
+      "title": "Sebi introduces auto-pledge framework for unpaid client securities. What does it mean for investors?",
+      "sector": "BANKING",
+      "sentiment": "neutral",
+      "confidence": 94.41,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Under the new framework, securities purchased outside the Margin Trading Facility that remain unpaid will continue to be credited directly to the client's demat account.",
+      "url": "https://www.livemint.com/market/stock-market-news/sebi-introduces-auto-pledge-framework-for-unpaid-client-securities-what-does-it-mean-for-investors-11783083361487.html"
+    },
+    {
+      "title": "Godrej Consumer expects high-teens Q1 revenue growth on strong volumes; margins seen lower",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 95.81,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Godrej Consumer Products projects a high-teens revenue growth for Q1 FY27, supported by robust volume increases across all categories.&amp;nbsp;",
+      "url": "https://www.livemint.com/market/stock-market-news/godrej-consumer-expects-high-teens-q1-revenue-growth-on-strong-volumes-margins-seen-lower-11783084403636.html"
+    },
+    {
+      "title": "Allcargo Global debuts on NSE, BSE following demerger from Allcargo Logistics",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 76.78,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Allcargo Global Limited has listed its shares on the NSE and BSE under the ticker symbol AGL, completing the Allcargo Group’s demerger and restructuring. The Group now has four focused entities to drive sustainable growth in logistics and supply chain.",
+      "url": "https://www.livemint.com/market/stock-market-news/allcargo-global-debuts-on-nse-bse-following-demerger-from-allcargo-logistics-11783081558568.html"
+    },
+    {
+      "title": "Atharva Polyplast IPO allotment date likely today. GMP, steps to check share allotment status online on BSE, MUFG Intime",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 92.4,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Atharva Polyplast's IPO allotment is expected today, with shares allocated proportionally to retail investors due to high oversubscription. The IPO, valued at ₹27 crore, attracted 10.74 times bids. Refunds for unsuccessful applicants will begin on July 6, 2025, with listings on July 7.",
+      "url": "https://www.livemint.com/market/stock-market-news/atharva-polyplast-ipo-allotment-date-likely-today-gmp-steps-to-check-share-allotment-status-online-on-bse-mufg-intime-11783077914675.html"
+    },
+    {
+      "title": "Aswath Damodaran predicts this for the future of AI: The next Amazon won't be Nvidia or OpenAI",
+      "sector": "AUTO",
+      "sentiment": "neutral",
+      "confidence": 78.75,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Damodaran believes AI will neither drastically eliminate jobs nor be a fleeting trend. He predicts it will enhance productivity while replacing certain roles. For investors, the lesson is that potential long-term AI winners might not yet be obvious, as seen in past technology revolutions.",
+      "url": "https://www.livemint.com/market/stock-market-news/aswath-damodaran-predicts-this-for-the-future-of-ai-the-next-amazon-wont-be-nvidia-or-openai-11783072285016.html"
+    },
+    {
+      "title": "Top Gainers &amp; Losers on 3 July: Zensar Tech, HFCL, IndusInd Bank, Muthoot Finance, Lupin among top gainers",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 67.1,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "The Indian stock market rose on July 3 before retreating as profit-taking emerged. The Nifty 50 closed up 0.40%, while the Sensex gained 0.35%. Realty led gains, but PSU Banks, Auto, and Metal sectors fell. Technology stocks showed signs of recovery amid easing rate hike concerns.",
+      "url": "https://www.livemint.com/market/stock-market-news/top-gainers-losers-on-3-july-zensar-tech-hfcl-indusind-bank-muthoot-finance-lupin-among-top-gainers-11783072829424.html"
+    },
+    {
+      "title": "Stock market today: Sensex gains 260 points, Nifty 50 ends above 24,250; IT, pharma shine",
+      "sector": "PHARMA",
+      "sentiment": "positive",
+      "confidence": 93.86,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Stock market today: The Sensex ended 262 points, or 0.34%, higher at 77,763.91, while the Nifty 50 rose by 95 points, or 0.39%, to end at 24,270.85.",
+      "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-sensex-gains-260-points-nifty-50-ends-above-24-250-it-pharma-shine-11783072714400.html"
+    },
+    {
+      "title": "Aastha Spintex IPO listing date next week. Here’s what GMP signals about share debut",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 93.88,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Aastha Spintex IPO was subscribed 3.30 times in total. The public issue was booked 1.27 times in the Retail Individual Investors category, and 6.03 times in the Non-Institutional Investors (NII) segment. The Qualified Institutional Buyers (QIB) category garnered 1.87 times subscription.",
+      "url": "https://www.livemint.com/market/ipo/aastha-spintex-ipo-listing-date-next-week-here-s-what-gmp-signals-about-share-debut-11783070764217.html"
+    },
+    {
+      "title": "Why did CG Power, Hitachi Energy, Apar Industries and other capital goods stocks crash up to 10% today? Explained",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 97.1,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Capital goods firms, including GE Vernova T&amp;amp;D India and Siemens Energy India, faced sharp declines after India's Centre allowed four Chinese manufacturers to join government tenders for power projects, impacting investor sentiment as tensions with China eased and infrastructure demands grew.",
+      "url": "https://www.livemint.com/market/stock-market-news/why-did-cg-power-hitachi-energy-apar-industries-and-other-capital-goods-stocks-crash-up-to-10-today-explained-11783070141221.html"
+    },
+    {
+      "title": "Expert view: See compelling opportunities in financials, energy, metals, says Sandeep Neema of PL Asset Management",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 68.44,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Sandeep Neema of PL Asset Management uncovers promising investment sectors amidst market volatility. He advises against letting FII flow data dictate portfolio choices, emphasising a selective approach within financials, energy, and industrials to seize growth opportunities in India.&amp;nbsp;",
+      "url": "https://www.livemint.com/market/stock-market-news/expert-view-see-compelling-opportunities-in-financials-energy-metals-says-sandeep-neema-of-pl-asset-management-11783069076434.html"
+    },
+    {
+      "title": "Market outlook: Monsoon, crude oil prices to earnings - Five key macro triggers for Dalal Street in H2CY26",
+      "sector": "AUTO",
+      "sentiment": "negative",
+      "confidence": 78.76,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Market experts expect a more constructive outlook for Indian equities in H2CY26 due to falling crude oil prices and easing inflation. However, concerns about expensive valuations and an uncertain monsoon remain, potentially leading to modest returns despite a favorable macro environment.",
+      "url": "https://www.livemint.com/market/market-outlook-monsoon-crude-oil-prices-to-earnings-five-key-macro-triggers-for-dalal-street-in-h2cy26-11783068083080.html"
+    },
+    {
+      "title": "Sampark India Logistics IPO allotment date likely today; GMP, steps to check share allotment status of SME IPO",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 95.43,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Sampark India Logistics IPO allotment date is likely today, 3 July 2026. Investors can check Sampark India Logistics IPO allotment status online through the websites of BSE and the IPO registrar. Maashitla Securities is the Sampark India Logistics IPO registrar.",
+      "url": "https://www.livemint.com/market/ipo/sampark-india-logistics-ipo-allotment-date-likely-today-gmp-steps-to-check-share-allotment-status-of-sme-ipo-11783068723207.html"
+    },
+    {
+      "title": "Market strategy: How should investors rebalance portfolios for H2CY26? Analysts favour banks, auto, metals, healthcare",
+      "sector": "BANKING",
+      "sentiment": "neutral",
+      "confidence": 62.01,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Market strategy: Valuations have also become more attractive. The Nifty 50 index is currently trading at a 12-month forward P/E ratio of 18.8x, around a 10% discount to its long-period average (LPA) of 21x. Its forward P/B ratio of 2.7x is about 5% below the historical average of 2.9x.",
+      "url": "https://www.livemint.com/market/stock-market-news/market-strategy-how-should-investors-rebalance-portfolios-for-h2cy26-analysts-favour-banks-auto-metals-healthcare-11783066012459.html"
+    },
+    {
+      "title": "Multibagger stock: Indiabulls share price zooms 5% to its 52-week high following stock market rally",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 94.61,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Indiabulls share price jumped 5% to hit its 52-week high of ₹29.50 on Friday, July 3, outperforming the broader market rally on Dalal Street. The multibagger stock has rallied 230% from its 52-week low of ₹8.93, which it had touched in February 2026.",
+      "url": "https://www.livemint.com/market/stock-market-news/multibagger-stock-indiabulls-share-price-zooms-5-to-its-52-week-high-following-indian-stock-market-rally-11783064271642.html"
+    },
+    {
+      "title": "Can US Fed hike rates aggressively this year? How a 50 bps rate increase could impact Indian stock market",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 81.95,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Amid fluctuating expectations for US Federal Reserve rate hikes due to soft job data, experts highlight potential impacts on the Indian stock market. As inflation remains above target, the reactions of both the US and Indian markets could shift dramatically in the coming months.",
+      "url": "https://www.livemint.com/market/stock-market-news/can-us-fed-hike-rates-aggressively-this-year-how-a-50-bps-rate-increase-could-impact-indian-stock-market-11783062432794.html"
+    },
+    {
+      "title": "Waterways Leisure Tourism shares hit 10% upper circuit for second straight day. Newly listed stock nears its issue price",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 94.28,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Waterways Leisure Tourism share price surged to the upper circuit for the second session on 3 July, following a weak stock market debut. Analysts suggest sustained buying interest indicates a potential long-term opportunity, despite the stock's volatility and high P/E ratio.",
+      "url": "https://www.livemint.com/market/stock-market-news/waterways-leisure-tourism-shares-hit-10-upper-circuit-for-second-straight-day-newly-listed-stock-nears-its-issue-price-11783061698016.html"
+    },
+    {
+      "title": "Small-cap stock under  ₹50: Sindhu Trade Links up over 8%. Do you own?",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 95.21,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Sindhu Trade Links share price has gained 8% in one month and has rallied 28% in three months. The smallcap stock has surged 40% in six months, while it has fallen 6% in one year. Over the past five years, Sindhu Trade Links shares have delivered multibagger returns of 760%.",
+      "url": "https://www.livemint.com/market/stock-market-news/smallcap-stock-under-rs-50-sindhu-trade-links-up-over-8-do-you-own-11783062033447.html"
+    },
+    {
+      "title": "IC Electricals IPO day 1: GMP shows 44% listing pop; price, key dates, other details of the SME IPO",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 95.49,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "IC Electricals IPO opened for subscription on Friday, 3 July, and will close on Tuesday, 7 July. The issue has already been fully subscribed.&amp;nbsp;",
+      "url": "https://www.livemint.com/market/ipo/ic-electricals-ipo-day-1-gmp-shows-44-listing-pop-price-key-dates-other-details-of-the-sme-ipo-11783059285413.html"
+    },
+    {
+      "title": "Teja Engineering Industries IPO: Latest GMP, online guide for allotment status check for SME IPO",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 95.73,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Teja Engineering Industries allotment date is likely to be finalised today, July 3. Investors can check Teja IPO allotment status online through the websites of NSE and the IPO registrar - Kfin Technologies.",
+      "url": "https://www.livemint.com/market/ipo/teja-engineering-industries-ipo-latest-gmp-online-guide-for-allotment-status-check-for-sme-ipo-11783060285194.html"
+    },
+    {
+      "title": "Kratikal Tech IPO share allotment expected today: GMP, easy-to-follow steps to check status online",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 95.61,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Investors can check the share allotment status on the registrar's website. As the IPO was a BSE SME IPO, one can also check the share allotment status on the BSE. Kratikal Tech stock is expected to list on the BSE SME on Tuesday, 7 July.",
+      "url": "https://www.livemint.com/market/ipo/kratikal-tech-ipo-share-allotment-expected-today-gmp-easy-to-follow-steps-to-check-status-online-11783057202100.html"
+    },
+    {
+      "title": "Stocks to buy: Dalmia Bharat, Chalet Hotels, Minda Corp, among 6 mid-cap and small-cap stock picks by Axis Securities",
+      "sector": "BANKING",
+      "sentiment": "neutral",
+      "confidence": 93.15,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Stocks to buy: Axis Securities has recommended 15 stocks across largecap, midcap and smallcap segments for the month of July. The stock picks are Kotak Mahindra Bank, Bajaj Finance, Bharti Airtel, Avenue Supermarts, Chalet Hotels, Minda Corporation, Dalmia Bharat, among others.",
+      "url": "https://www.livemint.com/market/stock-market-news/stocks-to-buy-dalmia-bharat-chalet-hotels-minda-corp-among-6-mid-cap-and-small-cap-stock-picks-by-axis-securities-11783057976540.html"
+    },
+    {
+      "title": "PB Fintech share price falls over 8% amid reports of  ₹1,741 crore block deal",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 97.48,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "PB Fintech share price dropped over 8% following a block deal of ₹1,741 crore, involving 2.37% of its equity. The deal was linked to Temasek Holdings' reported plans to reduce its stake, with details of the buyer and seller undisclosed.",
+      "url": "https://www.livemint.com/market/stock-market-news/pb-fintech-share-price-falls-over-8-amid-reports-of-rs-1-741-crore-block-deal-11783057239297.html"
+    },
+    {
+      "title": "US stock market holiday: Here's why Wall Street is closed on July 3",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 62.12,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "The Dow Jones gained 594.83 points to close at 52,900.07, marking its fourth week of gains. The S&amp;amp;P 500 was unchanged, while the Nasdaq fell 207.36 points. Financial markets will be closed on July 3 for Independence Day, resuming trading on July 6.",
+      "url": "https://www.livemint.com/market/stock-market-news/us-stock-market-holiday-heres-why-wall-street-is-closed-on-july-3-11783057409743.html"
+    },
+    {
+      "title": "APL Apollo Tubes’ profitability in focus after volumes fail to impress",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 94.43,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Weak demand, Dubai disruptions and steel price volatility dragged APL Apollo's Q1 volumes well below guidance, shifting investor focus to whether margins can hold up.",
+      "url": "https://www.livemint.com/market/mark-to-market/apl-apollo-tubes-q1fy27-steel-tubes-structural-steel-hrc-prices-dubai-operations-ebitda-per-tonne-volume-growth-11783053338500.html"
+    },
+    {
+      "title": "Seemax Resources IPO share allotment in focus today: Latest GMP, 5 steps to check status online",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 92.23,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Seemax Resources IPO was a fresh issue of 14,00,000 shares. With a price band of ₹134 to ₹141 per share, the issue aimed to raise ₹19.74 crore. Seemax Resources stock is due to list on the BSE SME on Tuesday, 7 July.",
+      "url": "https://www.livemint.com/market/ipo/seemax-resources-ipo-share-allotment-in-focus-today-latest-gmp-5-steps-to-check-status-online-11783055373367.html"
+    },
+    {
+      "title": "Kusumgar IPO: Price band set at  ₹398-419 per share; check key dates, issue details",
+      "sector": "UNKNOWN",
+      "sentiment": "neutral",
+      "confidence": 95.57,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "The Kusumgar IPO offers shares at ₹398-419 each from July 8-10. 50% is reserved for QIBs, 15% for NIIs, and 35% for retail investors. Employee shares are offered at a discount, with the listing on July 15.",
+      "url": "https://www.livemint.com/market/ipo/kusumgar-ipo-price-band-set-at-rs-398-419-per-share-check-key-dates-issue-details-11783055749506.html"
+    },
+    {
+      "title": "Crazy Snacks IPO Listing: Shares rally 10% after debuting at 5% premium from issue price despite muted GMP",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 93.97,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Crazy Snacks shares debuted at ₹44 on July 3, rising 10% to ₹46.20 post-listing. The IPO was oversubscribed 1.20 times, with retail investors at 1.24 times. The company plans to utilize proceeds for capital expenditure and paying down debt.",
+      "url": "https://www.livemint.com/market/stock-market-news/crazy-snacks-ipo-listing-shares-rally-10-after-debuting-at-5-premium-from-issue-price-despite-muted-gmp-11783054326170.html"
+    },
+    {
+      "title": "PC Jeweller share price jumps over 6% after company's claim to become debt-free in the current quarter",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 93.08,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Over the last year, the jewellery stock has crashed 27%. However, it has seen recovery this year, as year-to-date in 2026, it is up 10%. In a shorter timeframe of three months, the stock has jumped 24%.",
+      "url": "https://www.livemint.com/market/stock-market-news/pc-jeweller-share-price-jumps-over-6-after-companys-claim-to-become-debt-free-in-the-current-quarter-11783054135924.html"
+    },
+    {
+      "title": "Avenue Supermarts share price falls over 4% after Q1 business update. Should you buy or sell the stock?",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 93.64,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Avenue Supermarts Ltd, the operator of the D-Mart retail chain, reported a 15.13% rise in its standalone revenue from operations to ₹18,343.49 crore for the first quarter ended on June 30, 2026.",
+      "url": "https://www.livemint.com/market/stock-market-news/avenue-supermarts-share-price-falls-over-4-after-q1-business-update-should-you-buy-or-sell-the-stock-11783053148876.html"
+    },
+    {
+      "title": "Rajesh Palviya of Axis Sec suggests Five-Star Business, Apollo Tyres, Exide Industries shares to buy today",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 95.21,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Sensex and Nifty 50 surged on Friday, driven by IT stocks amid optimism from softer US jobs data. Nifty 50 rose 0.83% to 24,375.65, with 15 of 16 sectoral indices in the green, reflecting positive market sentiment despite ongoing global uncertainties.",
+      "url": "https://www.livemint.com/market/stock-market-news/rajesh-palviya-of-axis-sec-suggests-five-star-business-apollo-tyres-exide-industries-shares-to-buy-today-11783052468638.html"
+    },
+    {
+      "title": "HCL Tech to Infosys, Tech Mahindra: IT stocks extend gains, Nifty IT up 3% today: Is worst over for the battered sector?",
+      "sector": "IT",
+      "sentiment": "negative",
+      "confidence": 74.88,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "IT stocks gained on July 3, propelled by positive global tech trends and reduced fears of an interest rate hike. The Nifty IT index surged nearly 3%, recovering from recent declines, though it remains the worst-performing sector this year, down 30% in H1CY26.",
+      "url": "https://www.livemint.com/market/stock-market-news/hcl-tech-to-infosys-tech-mahindra-nifty-it-extends-winning-streak-up-3-today-is-worst-over-for-the-battered-sector-11783051935249.html"
+    },
+    {
+      "title": "Knack Packaging IPO Day 2: Issue subscribed 66.74x so far. Check GMP, key dates, review. Apply or not?",
+      "sector": "AUTO",
+      "sentiment": "neutral",
+      "confidence": 88.97,
+      "source": "Livemint",
+      "published_at": "nan",
+      "description": "Knack Packaging IPO opened on 1 July and closes on 3 July, raising ₹131.25 crore from anchor investors. The price band is ₹161-170, with allocations for QIBs, NIIs, and retail investors, listing expected on July 8.",
+      "url": "https://www.livemint.com/market/ipo/knack-packaging-ipo-gmp-knack-packaging-ipo-review-knack-packaging-ipo-subscription-knack-packaging-ipo-details-11783049272983.html"
+    },
+    {
+      "title": "LME approves Adani's major copper smelter in India as listed brand",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 92.9,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "The London Metal Exchange has approved Adani Copper for delivery against its contracts, enabling warrant issuance from July 10. Produced by Adani Enterprises’ Kutch Copper unit in Gujarat, the facility has 500,000-tonne capacity. The move may boost India’s copper self-reliance and reduce import dependence amid steady domestic demand.",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/lme-approves-adanis-major-copper-smelter-in-india-as-listed-brand/articleshow/132166327.cms"
+    },
+    {
+      "title": "Moneyview, Chandan Steel get Sebi's approval for IPOs",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 91.65,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "The Securities and Exchange Board of India (Sebi) has granted approval for the Initial Public Offerings of fintech unicorn Moneyview and Chandan Steel. Moneyview strives to raise Rs 1,500 crore through a combination of fresh issues and offer for sale, aiming to enhance its financial services and loan disbursement operations. This milestone showcases a vibran",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/moneyview-chandan-steel-get-sebis-approval-for-ipos/articleshow/132163475.cms"
+    },
+    {
+      "title": "India's Godrej Consumer expects volume-driven first-quarter revenue rise",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 95.79,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Godrej Consumer anticipates a robust first quarter, projecting high-teen consolidated revenue growth driven by solid underlying volume increases. The company implemented price adjustments to counter elevated input costs, with margins expected to improve progressively as commodity prices ease. Key international markets, including Indonesia and the GUAM region",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indias-godrej-consumer-expects-volume-driven-first-quarter-revenue-rise/articleshow/132163199.cms"
+    },
+    {
+      "title": "Dabur Q1 updates: Co expects double-digit revenue growth as rural demand stays ahead of urban",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 95.59,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Dabur India anticipates a significant boost in its first-quarter profit, driven by strategic price hikes that effectively countered rising inflation and packaging costs. The company noted resilient consumer sentiment despite global challenges, with sequential improvements in business performance. Strong double-digit growth is projected across key internation",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/dabur-india-posts-strong-quarterly-outlook-as-price-hikes-cushion-inflation-hit/articleshow/132163007.cms"
+    },
+    {
+      "title": "Sebi changes rules on unpaid client securities to ease broker operations",
+      "sector": "AUTO",
+      "sentiment": "neutral",
+      "confidence": 51.47,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "SEBI has revised rules for handling unpaid client securities, introducing auto-pledges in clients' demat accounts, stricter timelines, daily pledge reviews and investor safeguards. The changes aim to align with direct payouts, improve operational efficiency and strengthen investor protection across stock broking.",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-changes-rules-on-unpaid-client-securities-to-ease-broker-operations/articleshow/132161829.cms"
+    },
+    {
+      "title": "Global stocks: UAE markets end higher; IHC gains on India aluminium venture",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 94.65,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "UAE stock exchanges enjoyed a remarkable jump on Friday, paralleling an upswing in global indices after a lackluster U.S. jobs report eased anxiety over Federal Reserve interest rate hikes. Dubai's index surged 1.1%, primarily driven by the strength of its financial and industrial sectors, whereas Abu Dhabi's benchmark climbed 0.9%. This bullish sentiment is",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-stocks-uae-markets-end-higher-ihc-gains-on-india-aluminium-venture/articleshow/132161637.cms"
+    },
+    {
+      "title": "Quote of the day by Fred C. Kelly: \"We may forgive ourselves for owning a market dullard when the rest of the market is also in the doldrums, but it is disheartening to see one’s favorite resting as quietly as a castor-oil bottle while the rest of the market goes gaily upward\"",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 74.95,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Investors often face the agony of watching their chosen stocks lag while the broader market soars. This frustration can lead to costly mistakes like chasing rallies or abandoning sound investments. Fred C. Kelly's wisdom highlights that patience and conviction are crucial, distinguishing between temporary lulls and genuine business decline. Successful invest",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/quote-of-the-day-by-fred-c-kelly-we-may-forgive-ourselves-for-owning-a-market-dullard-when-the-rest-of-the-market-is-also-in-the-doldrums-but-it-is-disheartening-to-see-ones-favorite-resting-as-quietly-as-a-castor-oil-bottle-while-the-rest-of-the-market-goes-gaily-upward/articleshow/132152924.cms"
+    },
+    {
+      "title": "Nokia: How a forgotten stock from Finland doubled investors wealth in AI comeback story",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 95.52,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Nokia shares have doubled in 2026 as investors increasingly view the company as an AI infrastructure player. Strong cloud and AI orders, broker upgrades and growing data-centre demand have boosted optimism, though sustained hyperscaler spending remains critical to its long-term growth outlook.",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nokia-how-a-forgotten-stock-from-finland-doubled-investors-wealth-in-ai-comeback-story/articleshow/132161059.cms"
+    },
+    {
+      "title": "Raymond Realty Q1 pre-sales jump over two-fold to Rs 700 cr on better housing demand",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 95.33,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Raymond Realty has experienced an impressive increase in sales bookings, soaring to Rs 700 crore in the first quarter of the fiscal year. This outstanding performance reflects the heightened demand for residential properties, complemented by a 47% annual growth in customer fund collections. The company is strategically channeling resources to bolster current",
+      "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/raymond-realty-q1-pre-sales-jump-over-two-fold-to-rs-700-cr-on-better-housing-demand/articleshow/132160826.cms"
+    },
+    {
+      "title": "India bonds rise for sixth straight week as foreign flows continue",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 93.74,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Indian government bonds took a small step back on Friday, halting a strong six-week upward trend. The market's prior gains were supported by vigorous foreign investor interest, spurred by the prospect of being included in a global debt index and easing crude oil prices. Billions have flooded into Indian bonds recently, particularly the key 10-year note, as o",
+      "url": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-rise-for-sixth-straight-week-as-foreign-flows-continue/articleshow/132160801.cms"
+    },
+    {
+      "title": "Vedanta Power Q1 update: Sales rise 38% on Meenakshi boost, Sakti shutdown weighs",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 96.89,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Vedanta Power reported a 38% year-on-year rise in Q1 power sales, driven by a sharp jump in Meenakshi Energy output. Sequential performance declined due to lower generation at some plants, while Sakti Thermal Plant remained shut after a boiler blast, impacting overall volumes during the quarter.",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-power-q1-update-sales-rise-38-on-meenakshi-boost-sakti-shutdown-weighs/articleshow/132160077.cms"
+    },
+    {
+      "title": "Apollo Hospitals among 8 largecap stocks hit 52-week highs, rally up to 12% in a month",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 95.11,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Indian markets remained firm with Sensex closing higher, supporting momentum in largecap stocks. Eight companies, including Apollo Hospitals and Bosch, hit 52-week highs amid sustained buying interest. Gains of up to 12% in a month highlight strong investor confidence and continued bullish sentiment in select sectors.",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/apollo-hospitals-among-8-largecap-stocks-hit-52-week-highs-rally-up-to-12-in-a-month/slideshow/132159860.cms"
+    },
+    {
+      "title": "Global Market Update: Europe's STOXX 600 hits record high, eyes best weekly gain since mid-May",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 94.38,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Europe's STOXX 600 hovered near record highs on Friday and headed for its best week since mid-May, supported by gains in defence and cyclical stocks. Investors shrugged off near-term US rate concerns as easing Middle East tensions broadened the rally beyond technology shares. Siemens led gains in Germany, while defence stocks benefited from expectations of h",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/global-market-update-europes-stoxx-600-hits-record-high-eyes-best-weekly-gain-since-mid-may/articleshow/132159499.cms"
+    },
+    {
+      "title": "Rupee closes at 95.21 vs USD, falls on-week as merchant, NDF-linked flows blunt dollar retreat",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 96.1,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "The Indian rupee experienced a slight uptick on Friday, yet ended the week on a weaker footing due to overwhelming dollar demand driven by various market activities. Despite a rise in positive sentiment linked to a projected balance of payments surplus and new foreign inflows, pressures from maturing non-deliverable forward positions and large-scale merchant",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-closes-at-95-21-vs-usd-falls-on-week-as-merchant-ndf-linked-flows-blunt-dollar-retreat/articleshow/132158958.cms"
+    },
+    {
+      "title": "Bitcoin climbs above $61,000 as weak US jobs data fuels Fed rate cut hopes",
+      "sector": "FMCG",
+      "sentiment": "positive",
+      "confidence": 94.49,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "In the past 24 hours, Bitcoin was up 2.80% and Ethereum was up 6.24% to trade at $1,716 mark. Among the major altcoins, BNB, XRP, Solana, Tron, Hyperliquid, Dogecoin, and Cardano gained upto 6.68%.",
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-climbs-above-61000-as-weak-us-jobs-data-fuels-fed-rate-cut-hopes/articleshow/132158351.cms"
+    },
+    {
+      "title": "IDFC First Bank Q1 update: Loan book grows 21% YoY to Rs 3.05 lakh crore; shares rise 2%",
+      "sector": "BANKING",
+      "sentiment": "positive",
+      "confidence": 95.72,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "IDFC First Bank reported strong provisional Q1 FY27 business growth, with loans and advances rising 20.6% year-on-year and deposits increasing 18%. CASA deposits and the CASA ratio also improved, reflecting healthy balance sheet expansion. The stock gained nearly 2% following the business update, while the bank maintained steady lending momentum.",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/idfc-first-bank-q1-update-loan-book-grows-21-yoy-to-rs-3-05-lakh-crore-shares-rise-2/articleshow/132158301.cms"
+    },
+    {
+      "title": "Pragyawan Technologies files DRHP with Sebi for Rs 400 crore IPO",
+      "sector": "UNKNOWN",
+      "sentiment": "positive",
+      "confidence": 80.1,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Pragyawan Technologies has filed its DRHP with SEBI for an IPO comprising a Rs 400 crore fresh issue and an OFS of 15 million shares. The company will use fresh issue proceeds for working capital and general corporate purposes, strengthening its diversified technology and infrastructure business.",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pragyawan-technologies-files-drhp-with-sebi-for-rs-400-crore-ipo/articleshow/132157906.cms"
+    },
+    {
+      "title": "Kusumgar IPO price band fixed at Rs 398–419; Rs 650-crore issue opens July 8, GMP at 33%",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 90.71,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Kusumgar has set its IPO price band at Rs 398–419 for a Rs 650-crore offer for sale, opening July 8. The issue has a grey market premium of about 33%, signalling strong demand. The company has reported steady revenue and profit growth, supported by a diversified industrial fabric portfolio.",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/kusumgar-ipo-price-band-fixed-at-rs-398419-rs-650-crore-issue-opens-july-8-gmp-at-33/articleshow/132157618.cms"
+    },
+    {
+      "title": "'Don’t care’, says Donald Trump, chalking off alleged insider trading claims; $1.4 billion crypto windfall",
+      "sector": "UNKNOWN",
+      "sentiment": "negative",
+      "confidence": 76.35,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Donald Trump dismissed concerns over alleged insider trading and conflicts of interest after financial disclosures showed businesses linked to his family's cryptocurrency ventures generated an estimated $1.4 billion in 2025. Trump said he does not manage his businesses, calling the presidency a \"much bigger purpose\" than personal financial gains.",
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/dont-care-says-donald-trump-chalking-off-alleged-insider-trading-claims-1-4-billion-crypto-windfall/articleshow/132156805.cms"
+    },
+    {
+      "title": "10 high-priced stocks rally up to 85% in CY26; here’s FII and MF exposure",
+      "sector": "AUTO",
+      "sentiment": "positive",
+      "confidence": 94.85,
+      "source": "Economic Times",
+      "published_at": "nan",
+      "description": "Despite a weak broader market, several premium BSE stocks priced above Rs 5,000 delivered strong CY26 gains, led by Hitachi Energy India, Apar Industries and Solar Industries India.",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-high-priced-stocks-rally-up-to-85-in-cy26-heres-fii-and-mf-exposure/slideshow/132156716.cms"
+    }
+  ],
+  "economicScores": [
+    {
+      "date": "2026-07-08",
+      "repo_rate": 5.5,
+      "gdp_growth": 6.8,
+      "inflation": 3.2,
+      "repo_score": 0.5,
+      "gdp_score": 0.0,
+      "inflation_score": 0.5,
+      "economic_score": 0.325,
+      "signal": "BUY",
+      "confidence": 80.0,
+      "reason": "Favourable Repo Rate, Controlled Inflation"
+    },
+    {
+      "date": "2026-07-07",
+      "repo_rate": 5.5,
+      "gdp_growth": 6.8,
+      "inflation": 3.2,
+      "repo_score": 0.5,
+      "gdp_score": 0.0,
+      "inflation_score": 0.5,
+      "economic_score": 0.325,
+      "signal": "BUY",
+      "confidence": 80.0,
+      "reason": "Favourable Repo Rate, Controlled Inflation"
+    },
+    {
+      "date": "2026-07-03",
+      "repo_rate": 5.5,
+      "gdp_growth": 6.8,
+      "inflation": 3.2,
+      "repo_score": 0.5,
+      "gdp_score": 0.0,
+      "inflation_score": 0.5,
+      "economic_score": 0.325,
+      "signal": "BUY",
+      "confidence": 80.0,
+      "reason": "Favourable Repo Rate, Controlled Inflation"
+    }
+  ],
+  "institutionalFlows": [
+    {
+      "date": "08-Jul-2026",
+      "client_type": "DII",
+      "buy_value": 19165.13,
+      "sell_value": 18374.97,
+      "net_value": 790.16,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 60.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "08-Jul-2026",
+      "client_type": "FII/FPI",
+      "buy_value": 17463.95,
+      "sell_value": 15501.15,
+      "net_value": 1962.8,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 70.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "08-Jul-2026",
+      "client_type": "DII",
+      "buy_value": 19165.13,
+      "sell_value": 18374.97,
+      "net_value": 790.16,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 60.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "08-Jul-2026",
+      "client_type": "FII/FPI",
+      "buy_value": 17463.95,
+      "sell_value": 15501.15,
+      "net_value": 1962.8,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 70.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "08-Jul-2026",
+      "client_type": "DII",
+      "buy_value": 19165.13,
+      "sell_value": 18374.97,
+      "net_value": 790.16,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 60.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "08-Jul-2026",
+      "client_type": "FII/FPI",
+      "buy_value": 17463.95,
+      "sell_value": 15501.15,
+      "net_value": 1962.8,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 70.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "06-Jul-2026",
+      "client_type": "DII",
+      "buy_value": 19727.56,
+      "sell_value": 15936.14,
+      "net_value": 3791.42,
+      "flow_score": 0.5,
+      "signal": "BULLISH",
+      "confidence": 80.0,
+      "reason": "Strong institutional buying"
+    },
+    {
+      "date": "06-Jul-2026",
+      "client_type": "FII/FPI",
+      "buy_value": 11686.1,
+      "sell_value": 11443.07,
+      "net_value": 243.03,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 60.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "03-Jul-2026",
+      "client_type": "DII",
+      "buy_value": 18676.35,
+      "sell_value": 20630.24,
+      "net_value": -1953.89,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 70.0,
+      "reason": "Balanced institutional activity"
+    },
+    {
+      "date": "03-Jul-2026",
+      "client_type": "FII/FPI",
+      "buy_value": 13337.33,
+      "sell_value": 11982.0,
+      "net_value": 1355.33,
+      "flow_score": 0.0,
+      "signal": "NEUTRAL",
+      "confidence": 70.0,
+      "reason": "Balanced institutional activity"
+    }
+  ],
+  "riskScores": [
+    {
+      "date": "2026-07-08",
+      "technical_score": 0.6,
+      "news_score": 0.16666666666666666,
+      "volume_score": 0.0,
+      "economic_score": 0.325,
+      "fii_score": 0.0,
+      "final_score": 0.3142,
+      "signal": "BUY",
+      "confidence": 45.71,
+      "agreement_score": 60.0,
+      "reason": "Technical indicators bullish, Supportive macroeconomic conditions"
+    }
+  ],
+  "coverage": {
+    "stocks": 24940,
+    "technicalScores": 124440,
+    "volumeScores": 24940,
+    "newsItems": 504,
+    "newsSentiment": 504,
+    "sectors": 523,
+    "economicRows": 15,
+    "institutionalRows": 10
+  }
+}

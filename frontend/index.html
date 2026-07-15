@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrismEdge AI | Indian Market Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-animations" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    </div>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="#overview" aria-label="PrismEdge AI home">
+          <span class="brand-mark">PE</span>
+          <span>
+            <strong>PrismEdge AI</strong>
+            <small>India market intelligence</small>
+          </span>
+        </a>
+        <nav class="nav-list">
+          <a href="#overview" class="active">Overview</a>
+          <a href="#analysisHub">Analysis</a>
+          <a href="#stocks">Stocks</a>
+          <a href="#sectors">Sectors</a>
+          <a href="#news">News</a>
+          <a href="#platformStatus">Platform Status</a>
+        </nav>
+        <div class="access-card" data-tip="Firebase authentication is optional. When firebase-config.js is added, this panel shows the signed-in user and Firebase custom-claim role.">
+          <small>Access Model</small>
+          <strong id="activeRole">Local Analyst</strong>
+          <span id="activeUserDetail">Viewer &lt; Analyst &lt; Admin</span>
+          <button class="button ghost access-signout" id="signOutButton" hidden>Sign out</button>
+        </div>
+        <div class="alerts-card" id="alertsCard">
+          <button class="alerts-toggle" id="alertsToggle" type="button">
+            <span class="alerts-icon">!</span>
+            <div>
+              <strong>Alerts</strong>
+              <small id="alertsStatus">0 active</small>
+            </div>
+          </button>
+          <div class="alerts-body" id="alertsBody" hidden>
+            <label class="alert-row">
+              <span>Confidence below</span>
+              <div class="alert-input-group">
+                <input type="range" id="alertConfidence" min="0" max="100" step="1" value="50" aria-label="Confidence threshold">
+                <span id="alertConfidenceVal">50%</span>
+              </div>
+            </label>
+            <label class="alert-row">
+              <span>Institutional flow below</span>
+              <div class="alert-input-group">
+                <input type="range" id="alertInstFlow" min="-1" max="1" step="0.05" value="-0.2" aria-label="Institutional flow threshold">
+                <span id="alertInstFlowVal">-0.20</span>
+              </div>
+            </label>
+            <label class="alert-row">
+              <span>Sector strength below</span>
+              <div class="alert-input-group">
+                <input type="range" id="alertSectorStr" min="-1" max="1" step="0.05" value="0.2" aria-label="Sector strength threshold">
+                <span id="alertSectorStrVal">0.20</span>
+              </div>
+            </label>
+            <div class="alert-actions">
+              <label class="alert-enable">
+                <input type="checkbox" id="alertsEnabled" checked>
+                <span>Enable alerts</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="scheduler-card" id="schedulerCard">
+          <button class="scheduler-toggle" id="schedulerToggle" type="button">
+            <span class="scheduler-dot" id="schedulerDot"></span>
+            <div>
+              <strong>Data Scheduler</strong>
+              <small id="schedulerStatusText">Checking...</small>
+            </div>
+          </button>
+          <div class="scheduler-body" id="schedulerBody" hidden>
+            <div id="schedulerFreshness" class="scheduler-freshness"></div>
+          </div>
+        </div>
+        <div class="api-card">
+          <span class="pulse" id="apiPulse"></span>
+          <div>
+            <strong id="apiState">Loading data</strong>
+            <small id="apiDetail">Checking local bundle and backend</small>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">PrismEdge AI current-market terminal</p>
+            <h1>PrismEdge AI Market Intelligence</h1>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" id="refreshButton" title="Refresh API data" aria-label="Refresh API data">R</button>
+            <div class="download-dropdown" id="downloadDropdown">
+              <button class="button ghost download-trigger" id="downloadTrigger">Download &#9662;</button>
+              <div class="download-menu" id="downloadMenu" hidden>
+                <button class="download-option" id="exportPdfButton">PDF Report</button>
+                <button class="download-option" id="exportCsvButton">CSV Data</button>
+                <button class="download-option" id="exportButton">JSON Export</button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="command-ribbon reveal" aria-label="Market intelligence ribbon">
+          <div class="ribbon-item" data-tip="Date of the market report generated by the backend risk pipeline.">
+            <span>Report Date</span>
+            <strong id="reportDate">--</strong>
+          </div>
+          <div class="ribbon-item" data-tip="Most recent stock-indicator date used for the current technical snapshot.">
+            <span>Latest Market Signal</span>
+            <strong id="technicalFreshness">--</strong>
+          </div>
+          <div class="ribbon-item" data-tip="Most recent article timestamp included by the recency-aware news model.">
+            <span>Latest News Update</span>
+            <strong id="newsFreshness">--</strong>
+          </div>
+          <div class="ribbon-item" data-tip="Most recent FII/DII trading date used for institutional flow.">
+            <span>Latest Institutional Flow</span>
+            <strong id="flowFreshness">--</strong>
+          </div>
+          <div class="ribbon-item" data-tip="Shows current rows used by the model compared with total historical rows available.">
+            <span>Coverage</span>
+            <strong id="coverageScore">--</strong>
+          </div>
+        </section>
+
+        <section id="overview" class="hero-grid reveal">
+          <article class="market-hero">
+            <div>
+              <p class="eyebrow">Executive summary</p>
+              <div class="signal-line">
+                <span id="recommendation">--</span>
+                <strong id="riskBadge">-- Risk</strong>
+              </div>
+              <p id="reasonText" class="hero-copy"></p>
+            </div>
+            <div class="score-orbit" aria-label="Overall score gauge">
+              <canvas id="scoreGauge" width="280" height="280"></canvas>
+              <div class="gauge-center">
+                <strong id="overallScore">0.000</strong>
+                <small>overall score</small>
+              </div>
+            </div>
+          </article>
+
+          <div class="metric-grid">
+            <article class="metric stagger-1" data-tip="Confidence estimates how strongly the available evidence supports the current recommendation. It combines signal strength, agreement between engines, and data coverage quality; it is not a guarantee.">
+              <small>AI Confidence</small>
+              <strong id="confidence" data-count-target>--%</strong>
+              <span id="confidenceNote">Strength of evidence behind the output</span>
+            </article>
+            <article class="metric stagger-2" data-tip="Agreement shows how many independent analysis engines point in the same direction, such as technicals, news, volume, economy, and institutional flow. Lower agreement means a more mixed market picture.">
+              <small>AI Agreement</small>
+              <strong id="agreement" data-count-target>--%</strong>
+              <span>Consensus across model engines</span>
+            </article>
+            <article class="metric stagger-3" data-tip="The stock with the strongest current price-indicator score.">
+              <small>Best Stock</small>
+              <strong id="bestStock">--</strong>
+              <span id="bestStockNote">Technical leader</span>
+            </article>
+            <article class="metric stagger-4" data-tip="The stock with the highest current volume ratio versus its rolling average.">
+              <small>Highest Volume</small>
+              <strong id="highestVolume">--</strong>
+              <span id="volumeNote">Volume behavior</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel reveal">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Score movement</p>
+              <h2>Market Direction Over Time</h2>
+            </div>
+            <div class="segmented" role="group" aria-label="Chart mode">
+              <button class="active" data-chart-mode="line">Line</button>
+              <button data-chart-mode="bars">Bars</button>
+              <button data-chart-mode="area">Area</button>
+            </div>
+          </div>
+          <canvas id="trendChart" height="140"></canvas>
+        </section>
+
+        <section class="panel reasoning-preview reveal" data-tip="Plain-English explanation generated from the same backend report as the dashboard.">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Why this matters</p>
+              <h2>AI Reasoning Preview</h2>
+            </div>
+            <a class="button ghost" href="#platformStatus">Full explanation</a>
+          </div>
+          <div id="aiReasoningPreview" class="reasoning-preview-body"></div>
+        </section>
+
+        <section id="analysisHub" class="analysis-hub panel reveal">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Dedicated analysis pages</p>
+              <h2>Open Each Model Engine</h2>
+            </div>
+          </div>
+          <div class="analysis-links">
+            <a href="technical.html" data-tip="Price, RSI, MACD, Bollinger and technical signal details.">Price Signals</a>
+            <a href="news.html" data-tip="Recency-aware news sentiment by sector and article feed.">News Sentiment</a>
+            <a href="volume.html" data-tip="Current volume participation and unusual volume behavior.">Volume Flow</a>
+            <a href="economy.html" data-tip="Repo rate, GDP growth, inflation and macro score.">Economy</a>
+            <a href="institutional.html" data-tip="FII/DII buying, selling and net flow signals.">Institutional Flow</a>
+          </div>
+        </section>
+
+        <section class="panel agent-panel reveal">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Outcome explainer</p>
+              <h2>Ask PrismEdge Agent</h2>
+              <p class="section-desc">Ask questions about the market output, model scores, freshness, stocks, sectors, or why the recommendation changed.</p>
+            </div>
+          </div>
+          <div id="agentLog" class="agent-log" aria-live="polite"></div>
+          <form id="agentForm" class="agent-form">
+            <input id="agentQuestion" type="search" placeholder="Ask why the model is bullish, what drove risk, or whether data is fresh" aria-label="Ask PrismEdge Agent">
+            <button class="button" type="submit">Ask</button>
+          </form>
+          <div class="agent-prompts">
+            <button type="button" data-agent-prompt="Why is the recommendation Bullish?">Why Bullish?</button>
+            <button type="button" data-agent-prompt="Is the data fresh?">Freshness</button>
+            <button type="button" data-agent-prompt="What drove the risk level?">Risk</button>
+            <button type="button" data-agent-prompt="Which stock is strongest?">Strongest stock</button>
+          </div>
+        </section>
+
+        <section class="terminal-grid reveal">
+          <article class="panel module-board">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Signal stack</p>
+                <h2>What Is Driving The Result</h2>
+              </div>
+            </div>
+            <div id="moduleBoard" class="module-board-list"></div>
+          </article>
+          <article class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Market breadth</p>
+                <h2>Stock Strength Matrix</h2>
+              </div>
+            </div>
+            <div id="stockMatrix" class="stock-matrix"></div>
+          </article>
+        </section>
+
+        <section id="simulator" class="two-column reveal">
+          <article class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Interactive model</p>
+                <h2>What-If Weight Simulator</h2>
+              </div>
+              <button class="button ghost" id="resetWeights">Reset</button>
+            </div>
+            <div id="weightControls" class="weight-list"></div>
+          </article>
+          <article class="panel simulation-result">
+            <p class="eyebrow">What-if outcome</p>
+            <div class="sim-score">
+              <strong id="simSignal">--</strong>
+              <span id="simScore">0.000</span>
+            </div>
+            <canvas id="moduleChart" height="260"></canvas>
+            <div id="moduleLegend" class="legend"></div>
+          </article>
+        </section>
+
+        <section id="stocks" class="panel reveal">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Stock explorer</p>
+              <h2>Tracked Stocks</h2>
+            </div>
+            <div class="toolbar">
+              <input id="stockSearch" type="search" placeholder="Search ticker">
+              <select id="stockSort" aria-label="Sort stocks">
+                <option value="score">Technical score</option>
+                <option value="change">Daily change</option>
+                <option value="volume">Volume</option>
+                <option value="ticker">Ticker</option>
+              </select>
+            </div>
+          </div>
+          <div class="stock-layout">
+            <div id="stockList" class="stock-list"></div>
+            <article class="stock-detail">
+              <div class="stock-detail-head">
+                <div>
+                  <p class="eyebrow">Selected stock</p>
+                  <h3 id="selectedTicker">--</h3>
+                </div>
+                <strong id="selectedSignal">--</strong>
+              </div>
+              <canvas id="stockChart" height="220"></canvas>
+              <div id="stockStats" class="detail-grid"></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="sectors" class="panel reveal">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Sector intelligence</p>
+              <h2>Sector Strength Board</h2>
+            </div>
+            <select id="sectorMetric" aria-label="Sector metric">
+              <option value="score">Score</option>
+              <option value="change">Latest change</option>
+              <option value="volume">Volume</option>
+            </select>
+          </div>
+          <div id="sectorGrid" class="sector-grid"></div>
+        </section>
+
+        <section id="news" class="panel reveal">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">News intelligence</p>
+              <h2>Market News and Sentiment</h2>
+            </div>
+            <div class="toolbar">
+              <select id="sentimentFilter" aria-label="Filter news by sentiment">
+                <option value="all">All sentiment</option>
+                <option value="positive">Positive</option>
+                <option value="neutral">Neutral</option>
+                <option value="negative">Negative</option>
+              </select>
+              <select id="sectorFilter" aria-label="Filter news by sector"></select>
+            </div>
+          </div>
+          <div class="news-summary" id="newsSummary"></div>
+          <div id="newsList" class="news-list"></div>
+        </section>
+
+        <section id="platformStatus" class="two-column reveal">
+          <article class="panel">
+            <p class="eyebrow">AI reasoning</p>
+            <h2>Full Model Explanation</h2>
+            <div id="aiReasoning" class="reasoning"></div>
+          </article>
+          <article class="panel">
+            <p class="eyebrow">System health</p>
+            <h2>Platform Status</h2>
+            <div id="platformStatusGrid" class="platform-status-grid"></div>
+            <div class="health-list" id="dataHealth"></div>
+          </article>
+        </section>
+
+        <footer class="legal-disclaimer" data-tip="Deployment safeguard: users should understand this is analytics software, not regulated financial advice.">
+          <strong>Important disclaimer</strong>
+          <p>
+            PrismEdge AI is an analytics and educational tool only. It is not a SEBI-registered
+            Investment Adviser or Research Analyst, and it does not provide personalised investment
+            advice, research recommendations, directional calls, portfolio management, or any solicitation
+            to trade securities. Market data, AI outputs, scores, and explanations may be incomplete,
+            delayed, or incorrect. Investments and trading involve risk, including loss of capital.
+            Verify all information independently and consult a qualified SEBI-registered adviser before
+            making financial decisions.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <div class="floating-agent" id="floatingAgent">
+      <div class="floating-agent-panel" id="floatingAgentPanel" hidden>
+        <div class="floating-agent-header">
+          <span class="floating-agent-avatar">PE</span>
+          <span class="floating-agent-title">PrismEdge Agent</span>
+          <button class="floating-agent-close" id="floatingAgentClose" aria-label="Close chat">&times;</button>
+        </div>
+        <div class="floating-agent-messages" id="floatingAgentMessages" aria-live="polite"></div>
+        <div class="floating-agent-prompts">
+          <button type="button" data-float-prompt="Why is the recommendation Bullish?">Why Bullish?</button>
+          <button type="button" data-float-prompt="Is the data fresh?">Freshness</button>
+          <button type="button" data-float-prompt="Which stock is strongest?">Top Stock</button>
+        </div>
+        <form class="floating-agent-form" id="floatingAgentForm">
+          <input type="search" id="floatingAgentInput" placeholder="Ask about scores, charts, terms..." aria-label="Ask PrismEdge Agent">
+          <button class="button" type="submit">Ask</button>
+        </form>
+      </div>
+      <button class="floating-agent-bubble" id="floatingAgentBubble" aria-label="Open AI Agent chat">
+        <span class="floating-agent-icon">AI</span>
+      </button>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="auth.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

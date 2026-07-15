@@ -1,0 +1,102 @@
+{
+    "recommendation": "BULLISH",
+    "overall_score": 0.2624,
+    "confidence": 57.21,
+    "risk": "MEDIUM",
+    "agreement": 60.0,
+    "metrics": {
+        "technical": -0.01,
+        "news": 0.9054,
+        "volume": 0.05,
+        "economic": 0.325,
+        "institutional": 0.0
+    },
+    "chart": [
+        {
+            "day": "T-6",
+            "score": 0.28
+        },
+        {
+            "day": "T-5",
+            "score": 0.31
+        },
+        {
+            "day": "T-4",
+            "score": 0.29
+        },
+        {
+            "day": "T-3",
+            "score": 0.34
+        },
+        {
+            "day": "T-2",
+            "score": 0.36
+        },
+        {
+            "day": "T-1",
+            "score": 0.33
+        },
+        {
+            "day": "Today",
+            "score": 0.2624
+        }
+    ],
+    "reasons": [
+        "recent news sentiment is positive",
+        "macro indicators are supportive"
+    ],
+    "ai_explanation": "FORESIGHT AI recommends BULLISH with a current market score of 0.262, confidence of 57.21%, and agreement of 60.0%.\n\nThis report uses latest-per-instrument technical and volume snapshots, latest macro and institutional dates, and recency-weighted news sentiment.\n\nModule interpretation:\n- Technical: neutral score -0.010, contribution -0.004.\n- News: supportive score 0.905, contribution 0.226.\n- Volume: neutral score 0.050, contribution 0.007.\n- Economic: supportive score 0.325, contribution 0.033.\n- Institutional: neutral score 0.000, contribution 0.000.\n\nFreshness: technical 2026-07-13, volume 2026-07-13, news 2026-07-03, economic 2026-07-13, institutional 2026-07-13.\n\nRisk is classified as MEDIUM because this combines model confidence, signal agreement, and score magnitude.",
+    "sectors": [
+        {
+            "name": "AUTO",
+            "score": 0.9264
+        },
+        {
+            "name": "UNKNOWN",
+            "score": 0.9142
+        },
+        {
+            "name": "PHARMA",
+            "score": 0.8757
+        }
+    ],
+    "news": [
+        {
+            "title": "ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24",
+            "sentiment": "Negative",
+            "confidence": 96.27
+        },
+        {
+            "title": "Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share",
+            "sentiment": "Negative",
+            "confidence": 97.33
+        },
+        {
+            "title": "ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend",
+            "sentiment": "Negative",
+            "confidence": 94.24
+        },
+        {
+            "title": "Cyient DLM#39;s profit after tax in FY24 surges 93%",
+            "sentiment": "Positive",
+            "confidence": 90.99
+        },
+        {
+            "title": "Tata Consumer Q4 net profit falls 19% to Rs 217 cr, firm declares dividend of Rs 7.75 per share",
+            "sentiment": "Negative",
+            "confidence": 88.58
+        }
+    ],
+    "data_quality": {
+        "technical_rows": "10",
+        "volume_rows": "10",
+        "news_rows": "3",
+        "economic_rows": "1",
+        "fii_rows": "2",
+        "technical_date": "2026-07-13",
+        "volume_date": "2026-07-13",
+        "news_date": "2026-07-03",
+        "economic_date": "2026-07-13",
+        "fii_date": "2026-07-13"
+    }
+}

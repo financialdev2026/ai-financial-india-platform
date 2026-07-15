@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrismEdge AI | Login</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="auth-page" data-auth-page="login">
+    <main class="auth-shell">
+      <section class="auth-panel">
+        <div>
+          <p class="eyebrow">Secure access</p>
+          <h1>Sign in to PrismEdge AI</h1>
+          <p class="auth-copy">Access the market intelligence terminal with your Firebase account.</p>
+        </div>
+        <form id="loginForm" class="auth-form">
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <input name="password" type="password" autocomplete="current-password" required>
+          </label>
+          <button class="button" type="submit">Sign in</button>
+        </form>
+        <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
+        <p class="auth-switch">New user? <a href="signup.html">Create an account</a></p>
+      </section>
+    </main>
+    <script src="auth.js"></script>
+  </body>
+</html>

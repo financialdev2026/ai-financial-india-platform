@@ -1,0 +1,104 @@
+{
+    "executive_summary": {
+        "date": "2026-07-13",
+        "recommendation": "BULLISH",
+        "overall_score": 0.2624,
+        "confidence": 57.21,
+        "agreement": 60.0,
+        "market_risk": "MEDIUM",
+        "reason": "recent news sentiment is positive, macro indicators are supportive"
+    },
+    "score_breakdown": {
+        "Technical": {
+            "score": -0.01,
+            "weight": 40,
+            "contribution": -0.004
+        },
+        "News": {
+            "score": 0.9054,
+            "weight": 25,
+            "contribution": 0.226
+        },
+        "Volume": {
+            "score": 0.05,
+            "weight": 15,
+            "contribution": 0.007
+        },
+        "Economic": {
+            "score": 0.325,
+            "weight": 10,
+            "contribution": 0.033
+        },
+        "Institutional": {
+            "score": 0.0,
+            "weight": 10,
+            "contribution": 0.0
+        }
+    },
+    "technical_analysis": {
+        "as_of": "2026-07-13",
+        "tracked_stocks": 10,
+        "average_score": -0.01,
+        "buy_signals": 5,
+        "sell_signals": 4,
+        "average_confidence": 73.5,
+        "best_stock": "BHARTIARTL",
+        "best_score": 0.4,
+        "worst_stock": "ICICIBANK",
+        "worst_score": -0.75
+    },
+    "news_analysis": {
+        "latest_article_at": "2026-07-03 16:09:10",
+        "scored_sectors": 3,
+        "average_score": 0.905,
+        "positive_articles": 27,
+        "neutral_articles": 0,
+        "negative_articles": 0,
+        "article_count": 27,
+        "average_confidence": 70.02,
+        "best_sector": "AUTO",
+        "best_score": 0.9264,
+        "worst_sector": "PHARMA",
+        "worst_score": 0.8757
+    },
+    "volume_analysis": {
+        "as_of": "2026-07-13",
+        "tracked_stocks": 10,
+        "average_score": 0.05,
+        "average_ratio": 1.07,
+        "average_confidence": 77.5,
+        "highest_volume_stock": "TCS",
+        "highest_volume_ratio": 2.2555035138276573
+    },
+    "economic_analysis": {
+        "as_of": "2026-07-13",
+        "repo_rate": 5.5,
+        "gdp_growth": 6.8,
+        "inflation": 3.2,
+        "economic_score": 0.325,
+        "signal": "BULLISH",
+        "confidence": 80.0,
+        "reason": "Favourable Repo Rate, Controlled Inflation"
+    },
+    "institutional_analysis": {
+        "as_of": "13-Jul-2026",
+        "net_flow": -890.5700000000002,
+        "average_score": 0.0,
+        "buyers": 1,
+        "sellers": 1,
+        "average_confidence": 75.0
+    },
+    "data_quality": {
+        "technical_rows": "10",
+        "volume_rows": "10",
+        "news_rows": "3",
+        "economic_rows": "1",
+        "fii_rows": "2",
+        "technical_date": "2026-07-13",
+        "volume_date": "2026-07-13",
+        "news_date": "2026-07-03",
+        "economic_date": "2026-07-13",
+        "fii_date": "2026-07-13"
+    },
+    "ai_reasoning": "FORESIGHT AI recommends BULLISH with a current market score of 0.262, confidence of 57.21%, and agreement of 60.0%.\n\nThis report uses latest-per-instrument technical and volume snapshots, latest macro and institutional dates, and recency-weighted news sentiment.\n\nModule interpretation:\n- Technical: neutral score -0.010, contribution -0.004.\n- News: supportive score 0.905, contribution 0.226.\n- Volume: neutral score 0.050, contribution 0.007.\n- Economic: supportive score 0.325, contribution 0.033.\n- Institutional: neutral score 0.000, contribution 0.000.\n\nFreshness: technical 2026-07-13, volume 2026-07-13, news 2026-07-03, economic 2026-07-13, institutional 2026-07-13.\n\nRisk is classified as MEDIUM because this combines model confidence, signal agreement, and score magnitude."
+}

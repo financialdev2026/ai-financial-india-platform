@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from ta.momentum import RSIIndicator
 from ta.trend import MACD
-from ta.volatility import BollingexrBands
+from ta.volatility import BollingerBands
 
 RAW_STOCKS_DIR = "data/raw/stocks"
 PROCESSED_INDICATORS_DIR = "data/processed/indicators"

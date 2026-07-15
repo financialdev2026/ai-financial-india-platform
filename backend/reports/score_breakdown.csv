@@ -1,0 +1,6 @@
+Module,Score,Weight,Contribution
+Technical,-0.01,40,-0.004
+News,0.9054,25,0.226
+Volume,0.05,15,0.007
+Economic,0.325,10,0.033
+Institutional,0.0,10,0.0

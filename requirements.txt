@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pandas
+numpy
+yfinance
+requests
+python-dotenv
+sqlalchemy
+apscheduler
+ta
+feedparser
+transformers
+torch
