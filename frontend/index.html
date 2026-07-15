@@ -36,44 +36,6 @@
           <span id="activeUserDetail">Viewer &lt; Analyst &lt; Admin</span>
           <button class="button ghost access-signout" id="signOutButton" hidden>Sign out</button>
         </div>
-        <div class="alerts-card" id="alertsCard">
-          <button class="alerts-toggle" id="alertsToggle" type="button">
-            <span class="alerts-icon">!</span>
-            <div>
-              <strong>Alerts</strong>
-              <small id="alertsStatus">0 active</small>
-            </div>
-          </button>
-          <div class="alerts-body" id="alertsBody" hidden>
-            <label class="alert-row">
-              <span>Confidence below</span>
-              <div class="alert-input-group">
-                <input type="range" id="alertConfidence" min="0" max="100" step="1" value="50" aria-label="Confidence threshold">
-                <span id="alertConfidenceVal">50%</span>
-              </div>
-            </label>
-            <label class="alert-row">
-              <span>Institutional flow below</span>
-              <div class="alert-input-group">
-                <input type="range" id="alertInstFlow" min="-1" max="1" step="0.05" value="-0.2" aria-label="Institutional flow threshold">
-                <span id="alertInstFlowVal">-0.20</span>
-              </div>
-            </label>
-            <label class="alert-row">
-              <span>Sector strength below</span>
-              <div class="alert-input-group">
-                <input type="range" id="alertSectorStr" min="-1" max="1" step="0.05" value="0.2" aria-label="Sector strength threshold">
-                <span id="alertSectorStrVal">0.20</span>
-              </div>
-            </label>
-            <div class="alert-actions">
-              <label class="alert-enable">
-                <input type="checkbox" id="alertsEnabled" checked>
-                <span>Enable alerts</span>
-              </label>
-            </div>
-          </div>
-        </div>
         <div class="scheduler-card" id="schedulerCard">
           <button class="scheduler-toggle" id="schedulerToggle" type="button">
             <span class="scheduler-dot" id="schedulerDot"></span>

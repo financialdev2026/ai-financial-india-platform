@@ -41,7 +41,6 @@ init();
 async function init() {
   bindNavigation();
   bindActions();
-  initAlerts();
   initScrollReveal();
   initParticles();
   initScheduler();
@@ -171,7 +170,6 @@ function renderAll() {
   renderHealth();
   renderPlatformStatus();
   bindTooltips();
-  checkAlerts();
 }
 
 function renderSummary() {
@@ -824,17 +822,19 @@ async function askFloatingAgent(question) {
       signal: controller.signal
     });
     clearTimeout(timer);
+    const data = await response.json();
     if (response.ok) {
-      const data = await response.json();
       answer = data.answer || "";
       source = data.source || "";
+    } else {
+      answer = localAgentAnswer(question);
+      source = "local fallback";
     }
-  } catch {}
-
-  if (!answer) {
+  } catch (err) {
     answer = localAgentAnswer(question);
-    source = "local fallback";
+    source = "local fallback (backend unreachable)";
   }
+
   if (source && source.includes("backend report")) {
     answer += "\n(LLM not available — used local analysis)";
   }
@@ -1417,109 +1417,6 @@ function generatePDF() {
   } catch (err) {
     console.error("PDF generation failed:", err);
     toast("PDF export failed. Check console for details.");
-  }
-}
-
-function initAlerts() {
-  const saved = loadAlerts();
-  const enabled = $("#alertsEnabled");
-  const confSlider = $("#alertConfidence");
-  const instSlider = $("#alertInstFlow");
-  const sectorSlider = $("#alertSectorStr");
-  const confVal = $("#alertConfidenceVal");
-  const instVal = $("#alertInstFlowVal");
-  const sectorVal = $("#alertSectorStrVal");
-
-  enabled.checked = saved.enabled;
-  confSlider.value = saved.confidenceThreshold;
-  instSlider.value = saved.instFlowThreshold;
-  sectorSlider.value = saved.sectorStrThreshold;
-  confVal.textContent = `${saved.confidenceThreshold}%`;
-  instVal.textContent = Number(saved.instFlowThreshold).toFixed(2);
-  sectorVal.textContent = Number(saved.sectorStrThreshold).toFixed(2);
-  updateAlertsStatus();
-
-  $("#alertsToggle").addEventListener("click", () => {
-    const body = $("#alertsBody");
-    body.hidden = !body.hidden;
-  });
-
-  confSlider.addEventListener("input", () => {
-    confVal.textContent = `${confSlider.value}%`;
-    saveAlerts();
-  });
-  instSlider.addEventListener("input", () => {
-    instVal.textContent = Number(instSlider.value).toFixed(2);
-    saveAlerts();
-  });
-  sectorSlider.addEventListener("input", () => {
-    sectorVal.textContent = Number(sectorSlider.value).toFixed(2);
-    saveAlerts();
-  });
-  enabled.addEventListener("change", () => {
-    saveAlerts();
-    updateAlertsStatus();
-  });
-}
-
-function loadAlerts() {
-  try {
-    const raw = localStorage.getItem("prismedge-alerts");
-    if (raw) return JSON.parse(raw);
-  } catch {}
-  return { enabled: true, confidenceThreshold: 50, instFlowThreshold: -0.2, sectorStrThreshold: 0.2 };
-}
-
-function saveAlerts() {
-  const config = {
-    enabled: $("#alertsEnabled").checked,
-    confidenceThreshold: Number($("#alertConfidence").value),
-    instFlowThreshold: Number($("#alertInstFlow").value),
-    sectorStrThreshold: Number($("#alertSectorStr").value),
-  };
-  localStorage.setItem("prismedge-alerts", JSON.stringify(config));
-  updateAlertsStatus();
-}
-
-function updateAlertsStatus() {
-  const config = loadAlerts();
-  const statusEl = $("#alertsStatus");
-  const iconEl = $(".alerts-icon");
-  if (!config.enabled) {
-    statusEl.textContent = "Disabled";
-    iconEl.classList.remove("active");
-    return;
-  }
-  const count = [true, true, true].length;
-  statusEl.textContent = "3 rules active";
-  iconEl.classList.add("active");
-}
-
-function checkAlerts() {
-  if (!state.bundle) return;
-  const config = loadAlerts();
-  if (!config.enabled) return;
-
-  const summary = state.bundle.report.executive_summary;
-  const breakdown = state.bundle.report.score_breakdown;
-
-  const confidence = Number(summary.confidence || 0);
-  if (confidence < config.confidenceThreshold) {
-    toast(`Alert: Confidence ${confidence.toFixed(1)}% is below ${config.confidenceThreshold}% threshold.`);
-  }
-
-  const instScore = Number(breakdown.Institutional?.score || 0);
-  if (instScore < config.instFlowThreshold) {
-    toast(`Alert: Institutional flow score ${instScore.toFixed(3)} is below ${config.instFlowThreshold.toFixed(2)} threshold.`);
-  }
-
-  const sectors = state.bundle.sectors || [];
-  const weakestSector = sectors.reduce((min, s) => {
-    const score = Number(s.strengthScore ?? s.newsScore ?? 0);
-    return score < min.score ? { name: s.sector, score } : min;
-  }, { name: "--", score: 1 });
-  if (weakestSector.score < config.sectorStrThreshold) {
-    toast(`Alert: ${weakestSector.name} sector strength ${weakestSector.score.toFixed(3)} is below ${config.sectorStrThreshold.toFixed(2)} threshold.`);
   }
 }
 
