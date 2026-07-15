@@ -1945,6 +1945,10 @@ input[type="range"] {
 /* ============================================
    FLOATING AI AGENT
    ============================================ */
+[hidden] {
+  display: none !important;
+}
+
 .floating-agent {
   position: fixed;
   bottom: 24px;
