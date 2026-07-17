@@ -51,9 +51,34 @@ async function init() {
 async function loadData() {
   const response = await fetch("data/bundle.json", { cache: "no-store" });
   state.bundle = await response.json();
+  enrichSectors(state.bundle.sectors);
   state.selectedStock = state.bundle.stocks.slice().sort((a, b) => b.technicalScore - a.technicalScore)[0];
   setupWeights();
   await refreshLiveApi(false);
+}
+
+function enrichSectors(sectors) {
+  if (!Array.isArray(sectors)) return;
+  sectors.forEach((sector) => {
+    const series = sector.series || [];
+    if (series.length >= 2) {
+      const first = Number(series[0].close);
+      const last = Number(series[series.length - 1].close);
+      if (first > 0 && Number.isFinite(first) && Number.isFinite(last)) {
+        sector.changePct = Number(((last - first) / first * 100).toFixed(2));
+      }
+    }
+    const change = Number(sector.changePct || 0);
+    const news = Number(sector.newsScore || 0);
+    const hasNews = Number.isFinite(news) && news !== 0;
+    if (hasNews) {
+      sector.strengthScore = Number((news * 0.6 + (change / 10) * 0.4).toFixed(4));
+    } else if (change !== 0) {
+      sector.strengthScore = Number((Math.tanh(change / 5) * 0.4).toFixed(4));
+    } else if (!Number.isFinite(Number(sector.strengthScore))) {
+      sector.strengthScore = NaN;
+    }
+  });
 }
 
 async function refreshLiveApi(showToast = true) {
