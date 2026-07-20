@@ -1,7 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-from sentiment_model import analyze_sentiment
+from sentiment_model import analyze_sentiment_batch
 from sector_mapping import SECTOR_KEYWORDS
 
 engine = create_engine(
@@ -34,55 +34,32 @@ def process_news():
         f"Processing {len(news_df)} articles..."
     )
 
-    results = []
-
+    texts = []
+    meta = []
     for _, row in news_df.iterrows():
+        title = str(row.get("title", ""))
+        description = str(row.get("description", ""))
+        text = title + " " + description
+        texts.append(text[:512])
+        meta.append({
+            "title": title,
+            "sector": detect_sector(text),
+            "source": row.get("source", ""),
+            "published_at": str(row.get("published_at", "")),
+        })
 
-        title = str(
-            row.get("title", "")
-        )
+    print(f"Calling Groq batch sentiment for {len(texts)} articles...")
+    sentiments = analyze_sentiment_batch(texts)
 
-        description = str(
-            row.get("description", "")
-        )
-
-        text = (
-            title +
-            " " +
-            description
-        )
-
-        sentiment = analyze_sentiment(
-            text[:512]
-        )
-
+    results = []
+    for m, sent in zip(meta, sentiments):
         results.append({
-
-            "title":
-            title,
-
-            "sector":
-            detect_sector(text),
-
-            "sentiment":
-            sentiment["label"],
-
-            "confidence":
-            sentiment["score"],
-
-            "source":
-            row.get(
-                "source",
-                ""
-            ),
-
-            "published_at":
-            str(
-                row.get(
-                    "published_at",
-                    ""
-                )
-            )
+            "title": m["title"],
+            "sector": m["sector"],
+            "sentiment": sent["label"],
+            "confidence": sent["score"],
+            "source": m["source"],
+            "published_at": m["published_at"],
         })
 
     return pd.DataFrame(results)
