@@ -127,6 +127,9 @@ def get_dashboard():
             detail=f"Dashboard data is not ready: {exc}",
         ) from exc
 
+    if data.get("processing"):
+        return data
+
     report = data["report"]
     summary = report.get(
         "executive_summary",
@@ -638,7 +641,8 @@ def ask_openai_agent(question, dashboard):
         with urllib.request.urlopen(request, timeout=18) as response:
             data = json.loads(response.read().decode("utf-8"))
         return data["choices"][0]["message"]["content"].strip()
-    except (KeyError, TimeoutError, urllib.error.URLError, urllib.error.HTTPError, ValueError):
+    except (KeyError, TimeoutError, urllib.error.URLError, urllib.error.HTTPError, ValueError) as exc:
+        logger.warning("Groq agent API call failed: %s", exc)
         return ""
 
 
@@ -865,6 +869,14 @@ def ask_outcome_agent(payload: AgentQuestion):
         raise HTTPException(status_code=400, detail="Question is required.")
 
     dashboard = get_dashboard()
+    if dashboard.get("processing"):
+        return {
+            "question": question,
+            "answer": "The backend is still loading market data. Please try again in a few minutes.",
+            "source": "PrismEdge AI",
+            "llm_used": False,
+        }
+
     llm_answer = ask_llm_agent(question, dashboard)
     fallback_answer = answer_from_report(question, dashboard)
     source = "PrismEdge LLM agent plus current dashboard snapshot"
