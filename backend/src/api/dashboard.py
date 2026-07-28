@@ -108,7 +108,7 @@ def current_payload():
         "risk": risk,
         "technical": latest_technical,
         "volume": latest_volume,
-        "news": news.sort_values("sector_rank"),
+        "news": news.sort_values("sector_rank") if "sector_rank" in news.columns else news,
         "economic": latest_rows(economic),
         "institutional": latest_rows(institutional),
         "report": report,
