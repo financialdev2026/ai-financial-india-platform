@@ -89,6 +89,14 @@ async function refreshLiveApi(showToast = true) {
     const response = await fetch(API_URL, { cache: "no-store", signal: controller.signal });
     if (!response.ok) throw new Error(`Backend returned ${response.status}`);
     const live = await response.json();
+
+    if (live.processing) {
+      setApiState("Backend processing", live.error || "Scheduler loading data...", false);
+      if (showToast) toast("Backend is loading data — will retry automatically.");
+      scheduleNextRetry();
+      return;
+    }
+
     mergeLiveDashboard(live);
     setApiState("Live API connected", "Using backend /dashboard plus local bundle", true);
     if (showToast) toast("Live backend data refreshed.");
@@ -98,6 +106,10 @@ async function refreshLiveApi(showToast = true) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+function scheduleNextRetry() {
+  setTimeout(() => refreshLiveApi(false), 15000);
 }
 
 function mergeLiveDashboard(live) {

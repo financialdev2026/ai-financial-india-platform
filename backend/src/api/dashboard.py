@@ -78,12 +78,18 @@ def current_payload():
     institutional = read_table("fii_dii_scores")
 
     if market_reports.empty or risk.empty:
-        raise HTTPException(
-            status_code=404,
-            detail="Run src/run_pipeline.py before requesting the dashboard.",
-        )
+        return {
+            "processing": True,
+            "error": "Pipeline data not ready yet. Background scheduler is loading market data — check back in a few minutes.",
+        }
 
     report = load_report()
+    if not report:
+        return {
+            "processing": True,
+            "error": "Market report not generated yet. Scheduler is processing — please wait.",
+        }
+
     latest_technical = latest_per_group(
         technical,
         group_column="ticker",
@@ -97,6 +103,7 @@ def current_payload():
     ).sort_values("volume_ratio", ascending=False)
 
     return {
+        "processing": False,
         "market_reports": market_reports,
         "risk": risk,
         "technical": latest_technical,
