@@ -84,7 +84,7 @@ function enrichSectors(sectors) {
 let retryDelay = 15000;
 let retryTimer = null;
 const RETRY_START = Date.now();
-const MAX_RETRY_MS = 600000;
+const MAX_RETRY_MS = 120000;
 
 async function refreshLiveApi(showToast = true) {
   if (Date.now() - RETRY_START > MAX_RETRY_MS) {
