@@ -134,8 +134,13 @@ def generate_signal(score):
 def calculate_agreement(scores):
     positive = sum(score > 0.20 for score in scores)
     negative = sum(score < -0.20 for score in scores)
-    neutral = len(scores) - positive - negative
-    return round(max(positive, negative, neutral) / len(scores) * 100, 2)
+
+    if positive == 0 and negative == 0:
+        return 100.0  # all modules neutral — unanimous
+
+    majority = max(positive, negative)
+    total = positive + negative  # only count modules with a direction
+    return round(majority / total * 100, 2)
 
 
 def calculate_confidence(final_score, agreement, metadata):
