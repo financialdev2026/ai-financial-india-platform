@@ -82,30 +82,40 @@ function enrichSectors(sectors) {
 }
 
 async function refreshLiveApi(showToast = true) {
-  setApiState("Checking backend", "Trying API...", false);
+  setApiState("Connecting to backend", "Trying API...", false);
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 10000);
-  try {
-    const response = await fetch(API_URL, { cache: "no-store", signal: controller.signal });
-    if (!response.ok) throw new Error(`Backend returned ${response.status}`);
-    const live = await response.json();
+  const timer = setTimeout(() => controller.abort(), 45000);
+  let attempts = 0;
+  const maxAttempts = 3;
+  const tryFetch = async (): Promise<void> => {
+    attempts++;
+    try {
+      const response = await fetch(API_URL, { cache: "no-store", signal: controller.signal });
+      if (!response.ok) throw new Error(`Backend returned ${response.status}`);
+      const live = await response.json();
 
-    if (live.processing) {
-      setApiState("Backend processing", live.error || "Scheduler loading data...", false);
-      if (showToast) toast("Backend is loading data — will retry automatically.");
-      scheduleNextRetry();
-      return;
+      if (live.processing) {
+        setApiState("Backend processing", live.error || "Scheduler loading data...", false);
+        if (showToast) toast("Backend is loading data — will retry automatically.");
+        scheduleNextRetry();
+        return;
+      }
+
+      mergeLiveDashboard(live);
+      setApiState("Live API connected", "Using backend /dashboard plus local bundle", true);
+      if (showToast) toast("Live backend data refreshed.");
+    } catch (error) {
+      if (attempts < maxAttempts) {
+        setApiState(`Retrying (${attempts}/${maxAttempts})`, "Backend may be waking from sleep...", false);
+        await new Promise((r) => setTimeout(r, 10000));
+        return tryFetch();
+      }
+      setApiState("Offline bundle", "Backend unavailable; using generated data bundle", false);
+      if (showToast) toast("Backend was not reachable, so the local bundle stayed active.");
     }
-
-    mergeLiveDashboard(live);
-    setApiState("Live API connected", "Using backend /dashboard plus local bundle", true);
-    if (showToast) toast("Live backend data refreshed.");
-  } catch (error) {
-    setApiState("Offline bundle", "Backend unavailable; using generated data bundle", false);
-    if (showToast) toast("Backend was not reachable, so the local bundle stayed active.");
-  } finally {
-    clearTimeout(timer);
-  }
+  };
+  await tryFetch();
+  clearTimeout(timer);
 }
 
 function scheduleNextRetry() {
