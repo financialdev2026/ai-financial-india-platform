@@ -83,14 +83,12 @@ function enrichSectors(sectors) {
 
 async function refreshLiveApi(showToast = true) {
   setApiState("Connecting to backend", "Trying API...", false);
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 45000);
-  let attempts = 0;
-  const maxAttempts = 3;
-  const tryFetch = async (): Promise<void> => {
-    attempts++;
+  for (let attempt = 1; attempt <= 3; attempt++) {
     try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 20000);
       const response = await fetch(API_URL, { cache: "no-store", signal: controller.signal });
+      clearTimeout(timer);
       if (!response.ok) throw new Error(`Backend returned ${response.status}`);
       const live = await response.json();
 
@@ -104,18 +102,16 @@ async function refreshLiveApi(showToast = true) {
       mergeLiveDashboard(live);
       setApiState("Live API connected", "Using backend /dashboard plus local bundle", true);
       if (showToast) toast("Live backend data refreshed.");
+      return;
     } catch (error) {
-      if (attempts < maxAttempts) {
-        setApiState(`Retrying (${attempts}/${maxAttempts})`, "Backend may be waking from sleep...", false);
+      if (attempt < 3) {
+        setApiState(`Retrying (${attempt}/3)`, "Backend may be waking from sleep...", false);
         await new Promise((r) => setTimeout(r, 10000));
-        return tryFetch();
       }
-      setApiState("Offline bundle", "Backend unavailable; using generated data bundle", false);
-      if (showToast) toast("Backend was not reachable, so the local bundle stayed active.");
     }
-  };
-  await tryFetch();
-  clearTimeout(timer);
+  }
+  setApiState("Offline bundle", "Backend unavailable; using generated data bundle", false);
+  if (showToast) toast("Backend was not reachable, so the local bundle stayed active.");
 }
 
 function scheduleNextRetry() {
