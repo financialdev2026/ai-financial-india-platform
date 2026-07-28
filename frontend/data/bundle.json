@@ -81,7 +81,19 @@
       "sellers": 1,
       "average_confidence": 67.0
     },
-    "ai_reasoning": "The PrismEdge AI Risk Engine recommends a BUY signal with an overall market score of 0.314 and a confidence level of 45.71%.\n\nThis recommendation is produced by combining five independent analytical engines: Technical Analysis, Financial News Sentiment, Trading Volume Behaviour, Macroeconomic Indicators and Institutional Money Flow.\n\nModule-wise interpretation:\n\n• Technical Analysis contributes strongly to the recommendation with a score of 0.60, indicating bullish market momentum supported by price indicators.\n• Financial News Sentiment remains largely neutral (0.17) and has limited influence on today's recommendation.\n• Trading Volume Analysis remains neutral (0.00).\n• Macroeconomic indicators remain supportive (0.33), with favourable economic conditions improving overall outlook.\n• Institutional activity is currently neutral (0.00).\n\nThe weighted combination of these five analytical modules produces a final market score of 0.314.\n\nThe agreement score of 60.0% indicates moderate consensus among the analytical modules. The recommendation is reliable, although some indicators remain neutral.\n\nConsidering the combined weighted evidence, the AI concludes with a BUY recommendation while classifying the current market risk as HIGH."
+    "ai_reasoning": "The PrismEdge AI Risk Engine recommends a BUY signal with an overall market score of 0.314 and a confidence level of 45.71%.\n\nThis recommendation is produced by combining five independent analytical engines: Technical Analysis, Financial News Sentiment, Trading Volume Behaviour, Macroeconomic Indicators and Institutional Money Flow.\n\nModule-wise interpretation:\n\n• Technical Analysis contributes strongly to the recommendation with a score of 0.60, indicating bullish market momentum supported by price indicators.\n• Financial News Sentiment remains largely neutral (0.17) and has limited influence on today's recommendation.\n• Trading Volume Analysis remains neutral (0.00).\n• Macroeconomic indicators remain supportive (0.33), with favourable economic conditions improving overall outlook.\n• Institutional activity is currently neutral (0.00).\n\nThe weighted combination of these five analytical modules produces a final market score of 0.314.\n\nThe agreement score of 60.0% indicates moderate consensus among the analytical modules. The recommendation is reliable, although some indicators remain neutral.\n\nConsidering the combined weighted evidence, the AI concludes with a BUY recommendation while classifying the current market risk as HIGH.",
+    "data_quality": {
+      "technical_rows": 10,
+      "volume_rows": 10,
+      "news_rows": 1009,
+      "economic_rows": 1,
+      "fii_rows": 2,
+      "technical_date": "2026-07-08",
+      "volume_date": "2026-07-08",
+      "news_date": "2026-07-08",
+      "economic_date": "2026-07-06",
+      "fii_date": "2026-07-08"
+    }
   },
   "dashboard": {
     "recommendation": "BUY",

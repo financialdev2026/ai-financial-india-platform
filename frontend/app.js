@@ -237,6 +237,18 @@ function renderCommandRibbon() {
   const summary = report.executive_summary || {};
   const quality = report.data_quality || state.bundle.dashboard?.data_quality || {};
   const coverage = state.bundle.coverage || {};
+
+  function formatTimestamp(val) {
+    if (!val || val === "--" || val === "") return "--";
+    try {
+      const d = new Date(val);
+      if (isNaN(d)) return val;
+      return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) + " " +
+        d.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
+    } catch { return val; }
+  }
+
+  const fallbackDate = summary.date || state.bundle.generatedAt?.split("T")[0] || "--";
   const currentRows = ["technical_rows", "volume_rows", "news_rows", "economic_rows", "fii_rows"]
     .map((key) => Number(quality[key] || 0))
     .reduce((sum, value) => sum + value, 0);
@@ -246,20 +258,10 @@ function renderCommandRibbon() {
     + Number(coverage.economicRows || 0)
     + Number(coverage.institutionalRows || 0);
 
-  function formatTimestamp(val) {
-    if (!val || val === "--") return "--";
-    try {
-      const d = new Date(val);
-      if (isNaN(d)) return val;
-      return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) + " " +
-        d.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
-    } catch { return val; }
-  }
-
   $("#reportDate").textContent = summary.date || "--";
-  $("#technicalFreshness").textContent = formatTimestamp(quality.technical_date);
-  $("#newsFreshness").textContent = formatTimestamp(quality.news_date);
-  $("#flowFreshness").textContent = formatTimestamp(quality.fii_date);
+  $("#technicalFreshness").textContent = formatTimestamp(quality.technical_date || fallbackDate);
+  $("#newsFreshness").textContent = formatTimestamp(quality.news_date || fallbackDate);
+  $("#flowFreshness").textContent = formatTimestamp(quality.fii_date || fallbackDate);
   $("#coverageScore").textContent = totalRows
     ? `${formatNumber.format(currentRows)} current / ${formatNumber.format(totalRows)} rows`
     : "--";
