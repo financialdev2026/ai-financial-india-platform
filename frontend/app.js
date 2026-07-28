@@ -86,7 +86,7 @@ async function refreshLiveApi(showToast = true) {
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 20000);
+      const timer = setTimeout(() => controller.abort(), 35000);
       const response = await fetch(API_URL, { cache: "no-store", signal: controller.signal });
       clearTimeout(timer);
       if (!response.ok) throw new Error(`Backend returned ${response.status}`);
@@ -106,7 +106,7 @@ async function refreshLiveApi(showToast = true) {
     } catch (error) {
       if (attempt < 3) {
         setApiState(`Retrying (${attempt}/3)`, "Backend may be waking from sleep...", false);
-        await new Promise((r) => setTimeout(r, 10000));
+        await new Promise((r) => setTimeout(r, 15000));
       }
     }
   }
