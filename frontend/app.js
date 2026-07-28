@@ -81,41 +81,58 @@ function enrichSectors(sectors) {
   });
 }
 
+let retryDelay = 15000;
+let retryTimer = null;
+const RETRY_START = Date.now();
+const MAX_RETRY_MS = 600000;
+
 async function refreshLiveApi(showToast = true) {
-  setApiState("Connecting to backend", "Trying API...", false);
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 35000);
-      const response = await fetch(API_URL, { cache: "no-store", signal: controller.signal });
-      clearTimeout(timer);
-      if (!response.ok) throw new Error(`Backend returned ${response.status}`);
-      const live = await response.json();
-
-      if (live.processing) {
-        setApiState("Backend processing", live.error || "Scheduler loading data...", false);
-        if (showToast) toast("Backend is loading data — will retry automatically.");
-        scheduleNextRetry();
-        return;
-      }
-
-      mergeLiveDashboard(live);
-      setApiState("Live API connected", "Using backend /dashboard plus local bundle", true);
-      if (showToast) toast("Live backend data refreshed.");
-      return;
-    } catch (error) {
-      if (attempt < 3) {
-        setApiState(`Retrying (${attempt}/3)`, "Backend may be waking from sleep...", false);
-        await new Promise((r) => setTimeout(r, 15000));
-      }
-    }
+  if (Date.now() - RETRY_START > MAX_RETRY_MS) {
+    setApiState("Offline bundle", "Backend unavailable after 10 min; using generated data bundle", false);
+    return;
   }
-  setApiState("Offline bundle", "Backend unavailable; using generated data bundle", false);
-  if (showToast) toast("Backend was not reachable, so the local bundle stayed active.");
+
+  setApiState("Connecting to backend", "Trying API...", false);
+
+  try {
+    const healthResp = await fetch(API_BASE + "/health", { cache: "no-store", signal: AbortSignal.timeout(10000) });
+    if (!healthResp.ok) throw new Error("health check failed");
+  } catch {
+    setApiState("Backend starting", "Server may be waking from sleep...", false);
+    scheduleNextRetry();
+    return;
+  }
+
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 35000);
+    const response = await fetch(API_URL, { cache: "no-store", signal: controller.signal });
+    clearTimeout(timer);
+    if (!response.ok) throw new Error(`Backend returned ${response.status}`);
+    const live = await response.json();
+
+    if (live.processing) {
+      setApiState("Backend processing", live.error || "Scheduler loading data...", false);
+      if (showToast) toast("Backend is loading data — will retry automatically.");
+      scheduleNextRetry();
+      return;
+    }
+
+    mergeLiveDashboard(live);
+    setApiState("Live API connected", "Using backend /dashboard plus local bundle", true);
+    if (showToast) toast("Live backend data refreshed.");
+    retryDelay = 15000;
+    return;
+  } catch {
+    setApiState("Backend waking", `Retrying in ${retryDelay / 1000}s...`, false);
+    scheduleNextRetry();
+  }
 }
 
 function scheduleNextRetry() {
-  setTimeout(() => refreshLiveApi(false), 15000);
+  if (retryTimer) clearTimeout(retryTimer);
+  retryTimer = setTimeout(() => { retryTimer = null; refreshLiveApi(false); }, retryDelay);
+  retryDelay = Math.min(retryDelay * 1.5, 120000);
 }
 
 function mergeLiveDashboard(live) {
